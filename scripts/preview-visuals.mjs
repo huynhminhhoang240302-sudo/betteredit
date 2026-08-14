@@ -7,11 +7,13 @@ const mix = (a, b, t) => a + (b - a) * clamp(t);
 const smooth = (a, b, x) => { const t = clamp((x - a) / Math.max(0.0001, b - a)); return t * t * (3 - 2 * t); };
 const ease = t => 1 - Math.pow(1 - clamp(t), 3);
 const escapeXml = value => String(value ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" }[c]));
+const TITLE_STOP_WORDS = new Set(["the", "a", "an", "to", "or", "and", "into", "through", "from", "with", "in", "one"]);
+const titleWords = value => String(value ?? "").trim().split(/\s+/).filter(word => word && !TITLE_STOP_WORDS.has(word.toLowerCase()));
 const variantOf = spec => Number(spec.id.slice(-2));
 const reveal = (p, at = 0.18, span = 0.2) => smooth(at, at + span, p);
 const disappear = (p, at = 0.76, span = 0.15) => 1 - smooth(at, at + span, p);
 const shortTitle = spec => {
-  const words = String(spec.name).replace(/\b(the|a|an|to|or|and|into|through|from|with|in|one)\b/gi, "").trim().split(/\s+/).filter(Boolean);
+  const words = titleWords(spec.name);
   return escapeXml(words.slice(0, 4).join(" ").toUpperCase());
 };
 
@@ -104,7 +106,7 @@ function matrixAttribute(matrix) {
 }
 
 function panelTitle(spec, w, role = "primary") {
-  const words = String(spec.name).replace(/\b(the|a|an|to|or|and|into|through|from|with|in|one)\b/gi, "").trim().split(/\s+/).filter(Boolean).slice(0,3);
+  const words = titleWords(spec.name).slice(0,3);
   const totalCharacters = words.join(" ").length;
   const splitAt = totalCharacters > (role === "primary" ? 18 : 14) && words.length > 1 ? Math.ceil(words.length / 2) : words.length;
   const lines = [words.slice(0,splitAt).join(" "), words.slice(splitAt).join(" ")].filter(Boolean);
@@ -116,7 +118,7 @@ function panelTitle(spec, w, role = "primary") {
 
 function screenTitleOverlay(spec, p, anchor = { x: 480, y: 270 }) {
   if (spec.spatial_composition?.text_projection !== "screen_facing") return "";
-  const words = String(spec.name).replace(/\b(the|a|an|to|or|and|into|through|from|with|in|one)\b/gi, "").trim().split(/\s+/).filter(Boolean).slice(0,3);
+  const words = titleWords(spec.name).slice(0,3);
   const characterCount = words.join(" ").length;
   const splitAt = characterCount > 18 && words.length > 1 ? Math.ceil(words.length / 2) : words.length;
   const lines = [words.slice(0,splitAt).join(" "), words.slice(splitAt).join(" ")].filter(Boolean);
