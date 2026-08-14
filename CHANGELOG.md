@@ -2,6 +2,12 @@
 
 All notable changes are documented here. BetterEdit follows Semantic Versioning after `1.0.0`.
 
+## 0.1.2 — 2026-08-14
+
+- Replaced regex-based title stop-word removal with tokenization and exact stop-word filtering.
+- Preserved XML escaping for every generated title before SVG insertion.
+- Resolves three CodeQL incomplete multi-character sanitization alerts without dismissing them as false positives.
+
 ## 0.1.1 — 2026-08-14
 
 - Updated development dependency `sharp` from 0.34.3 to 0.35.3 to resolve the published high-severity libvips advisory affecting versions below 0.35.0.
