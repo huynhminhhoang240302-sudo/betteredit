@@ -4,7 +4,7 @@ Update monthly. Link to public evidence and use GitHub or package-host statistic
 
 | Month | Releases | Stars | Forks | Release downloads | Clean skill installs | External PRs reviewed | Issues triaged/resolved | Known external users | Security work | Evidence links |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| YYYY-MM | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | None | — |
+| 2026-08 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Secret scanning, push protection, Dependabot, private vulnerability reporting, protected main, CI and CodeQL passing | [release](https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.0), [actions](https://github.com/huynhminhhoang240302-sudo/betteredit/actions), [roadmap issues](https://github.com/huynhminhhoang240302-sudo/betteredit/milestone/1), [launch discussion](https://github.com/huynhminhhoang240302-sudo/betteredit/discussions/9) |
 
 ## Qualitative evidence
 

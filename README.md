@@ -110,7 +110,7 @@ Read [SECURITY.md](SECURITY.md), [PRIVACY.md](PRIVACY.md), [docs/THREAT_MODEL.md
 
 ## Project status
 
-`0.1.0` is a public-beta candidate. The repository should not be submitted to Codex for Open Source merely because it exists. The next milestone is documented external use, responsive issue triage, reviewed contributions, and at least two real releases. See [APPLICATION_PLAN.md](APPLICATION_PLAN.md).
+[`v0.1.0`](https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.0) is the current public beta. The repository should not be submitted to Codex for Open Source merely because it exists. The next milestone is documented external use, responsive issue triage, reviewed contributions, and at least two real releases. See [APPLICATION_PLAN.md](APPLICATION_PLAN.md).
 
 ## Contributing
 
