@@ -4,6 +4,16 @@
 
 Turn BetterEdit from a private, single-user system into an actively maintained public project with verifiable external value, then submit an accurate application to OpenAI's Codex for Open Source program.
 
+## Current status — 2026-08-14
+
+- Public repository: `https://github.com/huynhminhhoang240302-sudo/betteredit`
+- Public beta: `v0.1.0`
+- Clean remote-clone audit, CI, encoded-preview validation, secret scanning, and CodeQL: passing
+- Protected `main`, read-only Actions permissions, Dependabot, push protection, and private vulnerability reporting: enabled
+- `v0.2.0` milestone and clean-install evidence request: open
+- Verified external users, clean installations, human external pull requests, and resolved user issues: zero so far; one tested Dependabot security update has been merged
+- Application readiness: **not ready** until real external use and visible maintenance cycles exist
+
 Publishing the repository is necessary but not sufficient. The application is strongest after the project has real users, releases, maintenance activity, and evidence that the maintainer handles issues, pull requests, security, and roadmap work.
 
 ## Product definition

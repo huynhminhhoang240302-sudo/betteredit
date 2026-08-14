@@ -1,10 +1,10 @@
 # Application draft
 
-Replace bracketed fields only with verified facts. Character counts must be rechecked immediately before submission because the official form limits several answers to 500 characters.
+Character counts must be rechecked immediately before submission because the official form limits several answers to 500 characters. Do not submit while the evidence section still reports no external use or maintenance cycle.
 
 ## Repository qualification — draft
 
-> I am BetterEdit's primary maintainer. BetterEdit is a self-contained, local-first Codex skill for AI-assisted video editing, with 240 validated templates, playable previews, schemas, and safety-focused asset binding. It is used by [verified users/projects], has [verified adoption metric], and I maintain releases, issue triage, PR review, security, and compatibility.
+> I am BetterEdit's primary maintainer. BetterEdit is a self-contained, local-first Codex skill for AI-assisted video editing, with 240 validated templates, 240 playable previews, schemas, and safety-focused asset binding. v0.1.0 is newly public; I will apply only after external use and visible issue and pull-request maintenance exist.
 
 ## API-credit use — draft
 
@@ -16,10 +16,11 @@ Replace bracketed fields only with verified facts. Character counts must be rech
 
 ## Evidence links
 
-- Releases: `[URL]`
-- Maintenance evidence: `[URL to docs/MAINTENANCE_EVIDENCE.md]`
-- External usage examples: `[URL list]`
-- Representative resolved issue: `[URL]`
-- Representative reviewed pull request: `[URL]`
-- Security policy: `[URL]`
-- Clean-install evidence: `[URLs to issues, videos, or public projects]`
+- Repository: `https://github.com/huynhminhhoang240302-sudo/betteredit`
+- Releases: `https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.0`
+- Maintenance evidence: `https://github.com/huynhminhhoang240302-sudo/betteredit/blob/main/docs/MAINTENANCE_EVIDENCE.md`
+- External usage examples: none verified as of 2026-08-14
+- Representative resolved issue: none yet
+- Representative reviewed pull request: tested and merged security update `https://github.com/huynhminhhoang240302-sudo/betteredit/pull/3`; no human external contribution yet
+- Security policy: `https://github.com/huynhminhhoang240302-sudo/betteredit/security/policy`
+- Clean-install evidence request: `https://github.com/huynhminhhoang240302-sudo/betteredit/issues/5`

@@ -2,7 +2,7 @@
 
 All notable changes are documented here. BetterEdit follows Semantic Versioning after `1.0.0`.
 
-## 0.1.0 — Public-beta candidate
+## 0.1.0 — 2026-08-14
 
 - Added the self-contained `skill/betteredit` distribution: one installation includes the workflow, safety policy, guide, registry, browser, schemas, scripts, posters, and 240 MP4 demonstrations.
 - Added installed-skill diagnostics, template selection, project scaffolding, binding creation, and read-only validation utilities.
