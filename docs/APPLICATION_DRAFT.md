@@ -21,6 +21,6 @@ Character counts must be rechecked immediately before submission because the off
 - Maintenance evidence: `https://github.com/huynhminhhoang240302-sudo/betteredit/blob/main/docs/MAINTENANCE_EVIDENCE.md`
 - External usage examples: none verified as of 2026-08-14
 - Representative resolved issue: none yet
-- Representative reviewed pull request: none yet; initial Dependabot pull requests remain open for review
+- Representative reviewed pull request: tested and merged security update `https://github.com/huynhminhhoang240302-sudo/betteredit/pull/3`; no human external contribution yet
 - Security policy: `https://github.com/huynhminhhoang240302-sudo/betteredit/security/policy`
 - Clean-install evidence request: `https://github.com/huynhminhhoang240302-sudo/betteredit/issues/5`

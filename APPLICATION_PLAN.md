@@ -11,7 +11,7 @@ Turn BetterEdit from a private, single-user system into an actively maintained p
 - Clean remote-clone audit, CI, encoded-preview validation, secret scanning, and CodeQL: passing
 - Protected `main`, read-only Actions permissions, Dependabot, push protection, and private vulnerability reporting: enabled
 - `v0.2.0` milestone and clean-install evidence request: open
-- Verified external users, clean installations, reviewed external pull requests, and resolved user issues: zero so far
+- Verified external users, clean installations, human external pull requests, and resolved user issues: zero so far; one tested Dependabot security update has been merged
 - Application readiness: **not ready** until real external use and visible maintenance cycles exist
 
 Publishing the repository is necessary but not sufficient. The application is strongest after the project has real users, releases, maintenance activity, and evidence that the maintainer handles issues, pull requests, security, and roadmap work.
