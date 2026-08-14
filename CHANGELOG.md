@@ -2,6 +2,12 @@
 
 All notable changes are documented here. BetterEdit follows Semantic Versioning after `1.0.0`.
 
+## 0.1.1 — 2026-08-14
+
+- Updated development dependency `sharp` from 0.34.3 to 0.35.3 to resolve the published high-severity libvips advisory affecting versions below 0.35.0.
+- Verified the update in an isolated clone by installing dependencies, regenerating eight previews, and passing encoded-preview validation.
+- Added verified launch, maintenance, and application-readiness evidence without claiming external adoption.
+
 ## 0.1.0 — 2026-08-14
 
 - Added the self-contained `skill/betteredit` distribution: one installation includes the workflow, safety policy, guide, registry, browser, schemas, scripts, posters, and 240 MP4 demonstrations.

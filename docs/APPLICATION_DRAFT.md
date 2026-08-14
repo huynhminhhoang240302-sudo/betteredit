@@ -17,7 +17,7 @@ Character counts must be rechecked immediately before submission because the off
 ## Evidence links
 
 - Repository: `https://github.com/huynhminhhoang240302-sudo/betteredit`
-- Releases: `https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.0`
+- Releases: `https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.1` and `https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.0`
 - Maintenance evidence: `https://github.com/huynhminhhoang240302-sudo/betteredit/blob/main/docs/MAINTENANCE_EVIDENCE.md`
 - External usage examples: none verified as of 2026-08-14
 - Representative resolved issue: none yet

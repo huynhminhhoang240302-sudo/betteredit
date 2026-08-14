@@ -7,7 +7,7 @@ Turn BetterEdit from a private, single-user system into an actively maintained p
 ## Current status — 2026-08-14
 
 - Public repository: `https://github.com/huynhminhhoang240302-sudo/betteredit`
-- Public beta: `v0.1.0`
+- Public beta: `v0.1.1` after a tested high-severity development-dependency fix
 - Clean remote-clone audit, CI, encoded-preview validation, secret scanning, and CodeQL: passing
 - Protected `main`, read-only Actions permissions, Dependabot, push protection, and private vulnerability reporting: enabled
 - `v0.2.0` milestone and clean-install evidence request: open
