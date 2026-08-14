@@ -10,6 +10,14 @@ It is opinionated on purpose. Serif type. Strong continuity. Useful depth and sl
 
 BetterEdit is an independent community project. It is not affiliated with or endorsed by OpenAI.
 
+## One finished example
+
+**No Pump. Still Rising.** is a 30-second explanation of how a tree pulls water upward without a mechanical pump. It uses the same rules bundled with BetterEdit: serif titles, narrated sound design, oblique planes, a perspective corridor, continuous focal travel and a final spatial payoff.
+
+<a href="docs/media/no-pump-still-rising-30s.mp4?raw=1"><img src="docs/media/no-pump-still-rising-preview.gif" alt="Animated excerpt from No Pump. Still Rising., showing a water droplet approaching a tree on an oblique plane" width="800"></a>
+
+Click the moving preview for the complete 30-second MP4. Sound on
+
 ## Install
 
 Ask Codex:
