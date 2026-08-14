@@ -1,6 +1,6 @@
 {
   "name": "betteredit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "One installable open-source AI video editing skill for Codex, with 240 playable motion templates.",
   "type": "module",
