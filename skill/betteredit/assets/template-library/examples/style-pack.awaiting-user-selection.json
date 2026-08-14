@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "id": "awaiting-user-style-01",
+  "status": "awaiting_user_selection",
+  "reference_paths": [],
+  "typography": {
+    "display_serif": { "family": null, "classification": "serif", "fallback": ["Georgia", "serif"], "file_paths": [], "license": null },
+    "text_serif": { "family": null, "classification": "serif", "fallback": ["Georgia", "serif"], "file_paths": [], "license": null },
+    "caption_serif": { "family": null, "classification": "serif", "fallback": ["Georgia", "serif"], "file_paths": [], "license": null },
+    "tabular_serif": { "family": null, "classification": "serif", "fallback": ["Georgia", "serif"], "file_paths": [], "license": null },
+    "font_files_verified": false,
+    "font_specimen_path": null,
+    "max_families": 2
+  },
+  "palette": { "background": "WAITING_FOR_USER_SELECTION", "foreground": "WAITING_FOR_USER_SELECTION", "muted": "WAITING_FOR_USER_SELECTION", "accent_primary": "WAITING_FOR_USER_SELECTION", "accent_secondary": null },
+  "surfaces": { "base": "clean", "texture_strength": 0, "grain_strength": 0 },
+  "lighting": { "contrast_mode": "WAITING_FOR_USER_SELECTION", "highlight_behavior": "soft_local_pool", "vignette_strength": 0.12 },
+  "motion": { "easing_character": "editorial", "blur_character": "subtle_focus" },
+  "sound": { "palette_id": null },
+  "hard_constraints": {
+    "serif_only": true,
+    "decorative_top_bottom_notes": false,
+    "diagonal_or_crossing_line_fields": false,
+    "pseudo_wayfinding_counters": false,
+    "small_accent_kicker_with_detached_rule": false
+  }
+}

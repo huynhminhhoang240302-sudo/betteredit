@@ -1,0 +1,35 @@
+{
+  "name": "betteredit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "One installable open-source AI video editing skill for Codex, with 240 playable motion templates.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node tools/validate-library.mjs && node tools/validate-previews.mjs --sample 24 && node tools/audit-public-package.mjs",
+    "validate:library": "node tools/validate-library.mjs",
+    "validate:previews": "node tools/validate-previews.mjs",
+    "validate:previews:sample": "node tools/validate-previews.mjs --sample 24",
+    "audit:public": "node tools/audit-public-package.mjs",
+    "rebuild:library": "node scripts/build-library.mjs",
+    "render:previews": "node scripts/render-preview-library.mjs --force",
+    "render:previews:sample": "node scripts/render-preview-library.mjs --limit 8 --force"
+  },
+  "devDependencies": {
+    "ffmpeg-static": "5.2.0",
+    "sharp": "0.34.3"
+  },
+  "keywords": [
+    "ai-video-editing",
+    "video-editing",
+    "motion-graphics",
+    "coding-agents",
+    "codex",
+    "video-templates",
+    "local-first",
+    "json-schema"
+  ]
+}

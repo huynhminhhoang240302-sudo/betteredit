@@ -1,0 +1,4 @@
+interface:
+  display_name: "BetterEdit"
+  short_description: "Build stronger agent-assisted video edits"
+  default_prompt: "Use $betteredit to turn my topic, script, and selected media into a polished, locally rendered video with a validated edit plan."

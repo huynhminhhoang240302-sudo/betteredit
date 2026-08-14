@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.codex/master-video-system/preview-manifest.schema.json",
+  "title": "Rendered generic template-preview manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "preview_kind",
+    "width",
+    "height",
+    "fps",
+    "has_audio",
+    "previews"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "generated_at": { "type": "string", "minLength": 20 },
+    "preview_kind": { "const": "generic_procedural_choreography_demonstration" },
+    "width": { "const": 960 },
+    "height": { "const": 540 },
+    "fps": { "const": 30 },
+    "has_audio": { "const": true },
+    "previews": {
+      "type": "array",
+      "minItems": 240,
+      "maxItems": 240,
+      "items": { "$ref": "#/$defs/preview" }
+    }
+  },
+  "$defs": {
+    "preview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "family_id",
+        "group_code",
+        "status",
+        "video",
+        "poster",
+        "duration_s",
+        "fps",
+        "width",
+        "height",
+        "has_audio",
+        "size_bytes",
+        "sha256",
+        "poster_size_bytes",
+        "poster_sha256",
+        "poster_time_s",
+        "spatial_mode",
+        "settle_mode",
+        "text_projection",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(HK|ST|EV|FO|SP|EX|AR|BR|PY)\\d{2}-\\d{2}$"
+        },
+        "family_id": {
+          "type": "string",
+          "pattern": "^(HK|ST|EV|FO|SP|EX|AR|BR|PY)\\d{2}$"
+        },
+        "group_code": {
+          "enum": ["HK", "ST", "EV", "FO", "SP", "EX", "AR", "BR", "PY"]
+        },
+        "status": { "type": "string", "minLength": 1 },
+        "video": {
+          "type": "string",
+          "minLength": 5,
+          "pattern": "^[^\\\\]+\\.mp4$"
+        },
+        "poster": {
+          "type": "string",
+          "minLength": 5,
+          "pattern": "^[^\\\\]+\\.(png|jpg|jpeg|webp)$"
+        },
+        "duration_s": { "type": "number", "minimum": 0.3, "maximum": 10.1 },
+        "fps": { "const": 30 },
+        "width": { "const": 960 },
+        "height": { "const": 540 },
+        "has_audio": { "type": "boolean" },
+        "size_bytes": { "type": "integer", "minimum": 1 },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "poster_size_bytes": { "type": "integer", "minimum": 1 },
+        "poster_sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "poster_time_s": { "type": "number", "minimum": 0, "maximum": 10.1 },
+        "spatial_mode": {
+          "enum": ["frontal", "yaw_left", "yaw_right", "tilt_plane", "depth_stack", "corridor", "oblique_split", "orbital"]
+        },
+        "settle_mode": {
+          "enum": ["frontal_for_read", "soft_oblique_hold", "spatial_hold"]
+        },
+        "text_projection": {
+          "enum": ["screen_facing", "diegetic_plane"]
+        },
+        "provenance": { "const": "procedural_svg_choreography_v2_spatial" }
+      }
+    }
+  }
+}

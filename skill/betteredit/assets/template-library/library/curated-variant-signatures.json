@@ -1,0 +1,2402 @@
+[
+  {
+    "family_id": "HK01",
+    "variant_no": 1,
+    "name": "One-beat hush, decisive proof",
+    "signature": "Hold full black for a perceptible hush; hard-cut directly to the completed proof image; keep the proof still long enough to register before the exit.",
+    "edit_form": "clean_hard_cut",
+    "primary_attention": "composition",
+    "audio_profile": "intentional_music_stop",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK01",
+    "variant_no": 2,
+    "name": "Practical light discovers the proof",
+    "signature": "Begin inside a genuinely dark live shot; a practical light rises around the subject, revealing silhouette, surface, then the complete proof without changing framing.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK01",
+    "variant_no": 3,
+    "name": "Interrupted fragment to undeniable result",
+    "signature": "Show a brief incomplete process fragment; interrupt it with a short blackout; land on the finished result exactly when the key voice clause resolves.",
+    "edit_form": "deliberate_rupture",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK01",
+    "variant_no": 4,
+    "name": "Exposure recovery from near-black",
+    "signature": "Open on an underexposed proof shot rather than a graphic card; recover exposure from the focal subject outward; stop the lift at a natural image level and hold.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK01",
+    "variant_no": 5,
+    "name": "Subject crosses out of the void",
+    "signature": "Let the hero subject enter from a black occluding foreground; its movement uncovers the proof environment behind it; settle on the revealed relationship.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK01",
+    "variant_no": 6,
+    "name": "Voice names it before we see it",
+    "signature": "Keep the frame black while the incoming line begins; cut to proof on the operative noun; let the incoming ambience continue under the held image.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK01",
+    "variant_no": 7,
+    "name": "Proof flash with earned return to black",
+    "signature": "Flash two incomplete evidence glimpses, each revealing a different property; hold the third complete proof; cut back to black only after the consequence is understood.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK02",
+    "variant_no": 1,
+    "name": "Eyeline to horizon",
+    "signature": "Establish an observer in profile; let the eyes settle off-screen; cut to the world with the horizon or subject placed on that gaze point; hold the destination.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK02",
+    "variant_no": 2,
+    "name": "Silhouette becomes scale reference",
+    "signature": "Hold a human silhouette against a partial view; pull or reveal past the silhouette until the full environment dominates while the person remains as a scale anchor.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK02",
+    "variant_no": 3,
+    "name": "Gesture hands off to aerial route",
+    "signature": "Show a hand or head gesture traveling in one screen direction; cut on peak motion to an aerial move continuing that vector; settle at the indicated location.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK02",
+    "variant_no": 4,
+    "name": "Reflection opens into the real world",
+    "signature": "Frame the destination first as a reflection in an eye, visor, or window; move toward the reflected image; cross the reflective plane into the full environment.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK02",
+    "variant_no": 5,
+    "name": "Footfall to terrain",
+    "signature": "Cut from a witnessed footfall or hand contact to a terrain feature with matching position and direction; let the wide shot reveal where that action belongs.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK02",
+    "variant_no": 6,
+    "name": "Passing body reveals the world",
+    "signature": "Track a witness moving across the lens; hide the cut at maximum body occlusion; continue the motion as the body clears into the destination environment.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK02",
+    "variant_no": 7,
+    "name": "Ambience pulls the gaze outward",
+    "signature": "Begin on a quiet observer; introduce destination ambience before the picture changes; let the observer react; cut to the matching wide source of that sound.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK03",
+    "variant_no": 1,
+    "name": "Matched-frame anomaly",
+    "signature": "Establish the expected state; hard-cut to an anomalous state with the main object held at the same position and scale; hold the single changed feature.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK03",
+    "variant_no": 2,
+    "name": "Claim then visible counterexample",
+    "signature": "Present a short central claim over its supporting baseline; remove the claim; reveal one counterexample in the same visual field and hold it unanswered.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK03",
+    "variant_no": 3,
+    "name": "Expected motion reverses",
+    "signature": "Let a familiar action begin normally; freeze at the predicted outcome; resume with the critical element moving in the opposite or impossible direction.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK03",
+    "variant_no": 4,
+    "name": "Normal pattern, one exception",
+    "signature": "Build a repeated set in a stable composition; complete several expected states; isolate the one exception only after the viewer has learned the pattern.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK03",
+    "variant_no": 5,
+    "name": "Off-screen cue exposes the contradiction",
+    "signature": "Hold a normal-looking scene; introduce an incompatible sound from outside the focus plane; rack or pan once to reveal its visible cause.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK03",
+    "variant_no": 6,
+    "name": "False scale collapses",
+    "signature": "Begin on a detail that implies one scale; pull or cut wide while preserving the detail anchor; let the unexpected surrounding scale become the question.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK03",
+    "variant_no": 7,
+    "name": "Outcome precedes the presumed cause",
+    "signature": "Open on the surprising result; cut back to the familiar setup on a matching object; stop before the missing causal step, leaving the gap explicit.",
+    "edit_form": "deliberate_rupture",
+    "primary_attention": "composition",
+    "audio_profile": "intentional_music_stop",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK04",
+    "variant_no": 1,
+    "name": "Wide-medium-detail promise",
+    "signature": "Cut wide context to medium action to decisive detail; shorten the first two holds; keep the detail long enough to establish the promised payoff.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK04",
+    "variant_no": 2,
+    "name": "Three outcomes, rising stakes",
+    "signature": "Reveal three finished outcomes in increasing consequence rather than visual size; punctuate only the final outcome; finish on the one the story will explain.",
+    "edit_form": "clean_hard_cut",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK04",
+    "variant_no": 3,
+    "name": "Process fragments in causal order",
+    "signature": "Show trigger, operation, and visible result as separate proof fragments; preserve motion direction between cuts; hold the result after the chain completes.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK04",
+    "variant_no": 4,
+    "name": "Human, artifact, consequence",
+    "signature": "Cut from a human reaction to the responsible artifact and then to its environmental consequence; use the reaction eyeline to place the artifact.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "HK04",
+    "variant_no": 5,
+    "name": "Shape-linked proof chain",
+    "signature": "Match a dominant shape across three otherwise different proof shots; let the final match break scale and reveal the larger subject.",
+    "edit_form": "shape_match",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK04",
+    "variant_no": 6,
+    "name": "Sound-led corroboration triplet",
+    "signature": "Preview each next proof with its native sound; cut picture on the sound identity; release the music bed only when the third proof verifies the promise.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "HK04",
+    "variant_no": 7,
+    "name": "Many clues converge on one proof",
+    "signature": "Flash four distinct clues in separate full-frame cuts; recompose them as four spatial fragments; collapse those fragments into one complete hero result.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 1,
+    "name": "Clause-built central title",
+    "signature": "Reveal the first meaningful title clause at center; add the second clause beneath only after the first is read; hold the complete hierarchy without further motion.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 2,
+    "name": "Soft image, sharp title, resolved world",
+    "signature": "Start with the background optically soft; bring the central title into focus; after it is read, resolve the image behind it while the title remains stable.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 3,
+    "name": "Keyword grows into the full thought",
+    "signature": "Begin with one central operative word; make room by moving it to its final line position; reveal the rest of the title around it and settle.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 4,
+    "name": "Subject passes behind the title",
+    "signature": "Establish the title in the subject plane; allow a foreground subject to pass in front through a clean matte; reveal the full environment after the pass.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 5,
+    "name": "Title follows a real object contour",
+    "signature": "Reveal a title beside a meaningful object edge; move the camera once along that edge; complete the title exactly where the object relationship becomes clear.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 6,
+    "name": "Semantic two-line hinge",
+    "signature": "Show a stable first line; pivot the meaning by replacing only one word in the second line; hold the completed contrast as a single centered title.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 7,
+    "name": "Localized light uncovers the title",
+    "signature": "Keep a negative field visible; raise one soft pool of light behind the title area; reveal the full title inside that pool and let the light stop moving.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST01",
+    "variant_no": 8,
+    "name": "Title assembled through depth planes",
+    "signature": "Place separate title clauses on foreground, middle, and background planes; travel through them in reading order; align all clauses into one flat final lockup.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 1,
+    "name": "Centered portrait window settle",
+    "signature": "Open on a clean landscape field; reveal one centered portrait window at readable scale; let the portrait action play while the outside field stays quiet.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 2,
+    "name": "Still frame wakes into portrait motion",
+    "signature": "Present the portrait source as a held still; start its internal motion on a semantic audio cue; add depth separation only after movement begins.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 3,
+    "name": "Landscape compresses into portrait portal",
+    "signature": "Begin with the source covering the landscape canvas; protect the focal subject as the image narrows into a portrait window; reveal the contextual field around it.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 4,
+    "name": "Foreground crosses the portrait stage",
+    "signature": "Set the portrait window behind a real or matted foreground subject; move the foreground across once; use the occlusion to replace the portal content.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 5,
+    "name": "Focus trades between two portrait moments",
+    "signature": "Hold a primary portrait window; introduce a smaller second moment behind it; transfer focus and scale once so the second becomes primary while the first recedes.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 6,
+    "name": "Diegetic screen becomes the destination",
+    "signature": "Start with portrait footage playing on a screen inside a wider world; approach the screen along its normal; cross its surface into the footage.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 7,
+    "name": "Tilted portal corrects to attention",
+    "signature": "Introduce the portrait plane with a modest perspective tilt; rotate it square only as the focal action begins; hold it front-facing for comprehension.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST02",
+    "variant_no": 8,
+    "name": "Portrait subject escapes the matte",
+    "signature": "Keep the environment inside the portrait window; let one cleanly matted subject cross beyond its edge; expand the destination after the breakout.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 1,
+    "name": "Number then chapter phrase",
+    "signature": "Land one large central numeral; reveal the short chapter phrase beside or beneath it; hold both as one hierarchy and exit cleanly.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 2,
+    "name": "Phrase first, numeral confirms",
+    "signature": "Show the chapter phrase alone; introduce its ordinal only after the phrase is read; keep the ordinal semantically subordinate.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 3,
+    "name": "Freeze, chapter, resume",
+    "signature": "Freeze the underlying action at a meaningful threshold; lower its contrast; reveal the central chapter statement; remove it and resume the same action.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 4,
+    "name": "Numeral reveals footage through its counter",
+    "signature": "Place a large serif numeral at center; use its enclosed counter or silhouette as a genuine footage aperture; expand from that aperture into the chapter scene.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 5,
+    "name": "Two-part chapter statement locks",
+    "signature": "Reveal the topic word; introduce the action word from the focal subject direction; snap both into one readable phrase and hold.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 6,
+    "name": "Incoming line carries the card",
+    "signature": "Let the next voice line begin over the outgoing picture; cut to the clean chapter statement on its first key word; keep voice continuity through the exit.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 7,
+    "name": "Chapter appears on a lit surface",
+    "signature": "Approach a real surface or object face; light reaches it; reveal the chapter phrase as part of that plane; settle before cutting away.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "ST03",
+    "variant_no": 8,
+    "name": "Impact word expands to explanatory phrase",
+    "signature": "Strike one central chapter word; after the hit decays, add a short explanatory phrase without moving the impact word; hold the complete thought.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 1,
+    "name": "Action completes across the cut",
+    "signature": "Begin a clear physical action in asset A; cut at peak velocity; complete the same action vector in asset B; hold the consequence.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 2,
+    "name": "Claim clause meets proof clause",
+    "signature": "Show the claim context through the setup clause; cut to the proving asset on the operative noun or verb; remain there through the sentence end.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 3,
+    "name": "Native sound identifies the result",
+    "signature": "Play the action source; let the result sound begin just before the cut; reveal the visible result when that sound becomes recognizable.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 4,
+    "name": "Object shape changes worlds",
+    "signature": "Align the dominant silhouette in both assets; close asset A on the shape; hard-cut to the homologous shape in asset B; then reveal its context.",
+    "edit_form": "shape_match",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 5,
+    "name": "Light-value bridge",
+    "signature": "End asset A on a large coherent light or dark region; cut to asset B with the subject emerging from the same luma mass; hold the new subject.",
+    "edit_form": "clean_hard_cut",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 6,
+    "name": "Before and after share one anchor",
+    "signature": "Frame the unchanged anchor in state A; cut to state B with position and scale locked; reveal only the meaningful changed property.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 7,
+    "name": "Reaction precedes its cause",
+    "signature": "Open on a human or system reaction; let the causal sound trail; cut back to the source action; stop once the causal connection is understood.",
+    "edit_form": "l_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "l_cut_voice_or_ambience",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV01",
+    "variant_no": 8,
+    "name": "Setup object becomes consequence object",
+    "signature": "Track a setup object toward frame edge; cut on contact to a different object receiving the same vector; widen just enough to show the consequence relation.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 1,
+    "name": "Texture clue to contextual wide",
+    "signature": "Begin on a distinctive texture; cut wide with that texture held at the same screen position; let the rest of the environment explain it.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 2,
+    "name": "Object fragment names the location",
+    "signature": "Isolate one recognizable object fragment; pull focus away from it or cut to a wide where it remains foreground; establish the place behind it.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 3,
+    "name": "Macro action continues wide",
+    "signature": "Show a small action at macro scale; cut on the motion to the wide view of the same action; preserve direction and temporal continuity.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 4,
+    "name": "Continuous optical pullback",
+    "signature": "Lock the detail anchor; pull back through medium context into the full wide without a cut; stop as soon as the spatial relation is clear.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 5,
+    "name": "Wide ambience arrives inside the detail",
+    "signature": "Hold the detail shot; introduce the wide environment sound; let the detail respond if possible; cut wide on the ambience peak.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 6,
+    "name": "Detail silhouette matches aerial form",
+    "signature": "Close on a bounded detail shape; cut to an aerial feature with the same silhouette; widen or drift only enough to reveal the scale jump.",
+    "edit_form": "shape_match",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 7,
+    "name": "Foreground clears the wide",
+    "signature": "Start tight behind a moving foreground object; track its exit; use maximum occlusion to reveal the wide location beyond.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV02",
+    "variant_no": 8,
+    "name": "Misread scale corrected by context",
+    "signature": "Hold a detail long enough to invite a scale assumption; reveal a stable reference object; pull wide once to overturn that assumption.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 1,
+    "name": "Map resolves into aerial",
+    "signature": "Locate one point on a simple map; approach it; replace the map texture with matching aerial imagery while keeping orientation stable; settle on the site.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 2,
+    "name": "Ground horizon rises to aerial context",
+    "signature": "Begin at human eye level; crane or cut upward along a stable landmark; reveal the larger terrain once the landmark becomes a map-like anchor.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 3,
+    "name": "Aerial descent finds the subject",
+    "signature": "Open on broad aerial context; descend toward a pre-identified landmark; stop at an oriented medium-wide where the subject can be located.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 4,
+    "name": "Route trace earns the move",
+    "signature": "Show origin and destination in one aerial field; animate one path from origin; move the camera only as the trace advances; stop at the destination.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 5,
+    "name": "Landmark isolate then pullback",
+    "signature": "Begin on the landmark at medium scale; suppress surrounding contrast; restore the full aerial context while pulling back and keeping the landmark fixed.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 6,
+    "name": "Same geography changes time state",
+    "signature": "Lock an aerial viewpoint; transform day to night, dry to flood, or past to present; preserve roads and contours so the changed state reads spatially.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 7,
+    "name": "Top-down map becomes oblique world",
+    "signature": "Start orthographic over the site; pitch the camera into an oblique view while keeping north or a declared orientation key; reveal elevation and access.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EV03",
+    "variant_no": 8,
+    "name": "Human marker hands off to landscape scale",
+    "signature": "Establish a person or vehicle at a known coordinate; pull rapidly but smoothly to the landscape scale; keep the marker visible until scale is understood.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 1,
+    "name": "Wide-medium-detail corroboration",
+    "signature": "Establish the whole event; cut to the responsible action; cut to the decisive physical detail; hold the detail as verification.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 2,
+    "name": "Claim, source, consequence",
+    "signature": "Show the claimed condition; reveal the primary source or artifact; finish on a visible real-world consequence rather than another claim.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 3,
+    "name": "Person, tool, output",
+    "signature": "Begin with the operator; cut on their gesture to the tool in use; cut on tool action to the output; keep vectors coherent.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 4,
+    "name": "Location, process, result",
+    "signature": "Orient the location; enter the local process; exit to the result in the same geographic direction; keep one landmark persistent and hold the result.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 5,
+    "name": "Detail, medium, wide consequence",
+    "signature": "Start with a revealing detail; widen to the actor or mechanism; finish wide on the broader consequence, preserving the detail as an anchor when possible.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 6,
+    "name": "Two proofs form one synthesis",
+    "signature": "Present proof A and proof B as separate full frames; on the third beat, place both in a restrained shared composition around one synthesis subject.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 7,
+    "name": "Setup, action, aftermath",
+    "signature": "Show the untouched setup; cut at action onset; skip directly to the stable aftermath; make the changed state the final focal point.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EV04",
+    "variant_no": 8,
+    "name": "Observation, measurement, lived effect",
+    "signature": "Open with an observable phenomenon; cut to its measurement; finish on how that measured change affects a person or environment.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 1,
+    "name": "Clause collapses to the operative word",
+    "signature": "Show a short central phrase; fade the supporting words only after it is read; keep the operative serif word fixed as the sole final focus.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 2,
+    "name": "Background yields to one word",
+    "signature": "Establish the subject image; lower only its local contrast; reveal one keyword at the subject-adjacent focal point; restore the image after reading.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 3,
+    "name": "Tracked word names the moving subject",
+    "signature": "Place one keyword beside the subject; maintain a restrained positional relationship through a single motion; remove the word before the next beat.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 4,
+    "name": "Semantic underline measures the exact term",
+    "signature": "Reveal one keyword; draw a single underline only beneath its meaningful span; stop the line at the final letter and hold without extra marks.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "simple_mark",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 5,
+    "name": "Antonym replacement changes the reading",
+    "signature": "Hold the first keyword in a stable sentence frame; replace it in-place with its semantic opposite; keep all surrounding composition unchanged.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 6,
+    "name": "Word scale follows real magnitude",
+    "signature": "Anchor a keyword to a measured object or phenomenon; change the word scale only as the represented magnitude changes; stop at the final measured state.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 7,
+    "name": "Cause word hands off to effect word",
+    "signature": "Reveal the cause word near its source; move attention through the visible action; replace it with the effect word at the consequence location.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO01",
+    "variant_no": 8,
+    "name": "Quotation resolves to its key word",
+    "signature": "Show a brief quotation fragment; highlight no more than one term; let all other words recede, leaving the selected word over its evidence image.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 1,
+    "name": "Context first, value second",
+    "signature": "Show the measured subject and unit context; reveal the value only after the viewer knows what is being counted; hold subject and value together.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 2,
+    "name": "Objects accumulate into a numeral",
+    "signature": "Add visible countable units in meaningful steps; after the last unit arrives, resolve the total as one serif numeral; stop all motion.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 3,
+    "name": "Measure fills, then number locks",
+    "signature": "Grow one legitimate bar, gauge, or distance measure from zero to the observed endpoint; place the final value only when movement stops.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "label_measurement",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 4,
+    "name": "Before-after delta revealed last",
+    "signature": "Show the baseline value beside its state; transform the state; replace with the new value; reveal the delta only after both endpoints are understood.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 5,
+    "name": "Physical scale brackets the statistic",
+    "signature": "Position the measured subject between two real reference objects; introduce the value after the scale relation reads; retain only one comparison cue.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 6,
+    "name": "Meaningful accumulation count-up",
+    "signature": "Count upward in coarse semantic steps synchronized to visible accumulation; slow before the final value; land exactly when the real process completes.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 7,
+    "name": "Estimate resolves to an uncertainty range",
+    "signature": "Begin with evidence rather than a precise number; reveal a bounded range; narrow or widen it once as the stated uncertainty changes.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "label_measurement",
+    "audio_profile": "voice_only",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO02",
+    "variant_no": 8,
+    "name": "Denominator changes the interpretation",
+    "signature": "Present the headline count; reveal the denominator or comparison base; recompose both as a rate or proportion and hold the corrected reading.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 1,
+    "name": "Full source to exact crop",
+    "signature": "Show the complete page or screenshot for orientation; push once to the relevant region; stop with enough surrounding context to verify its location.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 2,
+    "name": "One region remains while the rest dims",
+    "signature": "Hold the full source; dim nonessential regions uniformly; keep one proof region at normal contrast; restore the whole source before exit.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 3,
+    "name": "Scroll, stop, read",
+    "signature": "Begin high enough to establish the source; scroll at one controlled speed; decelerate at the target passage; remain completely still for reading.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 4,
+    "name": "Pointer arrives only after orientation",
+    "signature": "Display the full interface first; move one pointer along a short intentional route; stop on the proof control or datum; remove the pointer after the action.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "simple_mark",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 5,
+    "name": "Source state toggles in place",
+    "signature": "Lock the interface frame; show state A; perform one authentic interaction; reveal state B with changed fields aligned to their previous positions.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 6,
+    "name": "Magnifier verifies, then withdraws",
+    "signature": "Establish the whole source; move one magnifier to a single target; enlarge the proof region inside it; withdraw to restore source context.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 7,
+    "name": "Perspective page squares to evidence",
+    "signature": "Introduce the source at a modest spatial angle as an object; rotate it front-facing at the target clause; hold the legible evidence flat.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "FO03",
+    "variant_no": 8,
+    "name": "Two regions in causal reading order",
+    "signature": "Orient the full source; focus region one; return briefly to the whole; focus region two; finish with both locations understood but only one active cue at a time.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 1,
+    "name": "Foreground card uncovers context card",
+    "signature": "Hold a foreground card over part of a context card; move the foreground once along depth and aside; reveal the relationship on the back plane.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 2,
+    "name": "Lateral travel through staggered evidence",
+    "signature": "Arrange evidence on three depth planes; travel laterally so foreground occlusion guides the order; settle with the final card unobstructed.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 3,
+    "name": "Flat cards assemble into a depth stack",
+    "signature": "Introduce two to four cards in reading order; move each to a distinct depth; align their shared anchor into one coherent spatial stack.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 4,
+    "name": "Front card lifts to expose dependency",
+    "signature": "Establish a stack as one object; lift only the front card; reveal the linked evidence directly beneath; return or exit through that dependency.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 5,
+    "name": "Shallow orbit reveals hidden card relation",
+    "signature": "Begin front-on; orbit a limited angle around the stack; let parallax expose one previously hidden relationship; stop before the layout becomes decorative.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 6,
+    "name": "Focus rack crosses depth planes",
+    "signature": "Hold camera position; focus the foreground evidence, then the middle connection, then the background conclusion; use no simultaneous moving cards.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 7,
+    "name": "Causal action propagates card to card",
+    "signature": "Trigger a visible state on the first card; pass one signal through the depth stack; change each downstream card only after the prior event completes.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP01",
+    "variant_no": 8,
+    "name": "Card corridor collapses into destination",
+    "signature": "Travel through a short corridor of evidence planes; align their apertures; collapse them into the destination scene at the final plane.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 1,
+    "name": "Subject lock, background push",
+    "signature": "Separate subject from background; keep the subject scale nearly fixed; push the background to reveal spatial context; settle both layers naturally.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 2,
+    "name": "Foreground parallax reveals hidden context",
+    "signature": "Move one foreground matte across a small arc; expose a previously hidden background fact; stop when the fact and subject share the frame.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 3,
+    "name": "Shallow arc around a still subject",
+    "signature": "Build foreground, subject, and background planes; arc the camera modestly around the subject; use occlusion changes to explain relative placement.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 4,
+    "name": "Atmospheric depth clears toward the subject",
+    "signature": "Begin with distance haze separating planes; clear the haze from the focal subject outward; reveal depth without moving the still itself.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 5,
+    "name": "Detail crop pulls through reconstructed depth",
+    "signature": "Start on a meaningful detail; pull back across separated planes; preserve the detail anchor until the full scene relationship is visible.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 6,
+    "name": "Foreground subject peels from archival image",
+    "signature": "Hold the original photograph intact; separate the foreground subject just enough to expose archival context behind; restore the original frame before exit.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 7,
+    "name": "Cast shadow establishes the subject plane",
+    "signature": "Reveal a separated subject first; introduce a physically coherent cast shadow onto the background plane; move camera once to confirm their spatial relation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP02",
+    "variant_no": 8,
+    "name": "Enter a doorway inside the photograph",
+    "signature": "Reconstruct depth around a real doorway or aperture; approach it through foreground and subject planes; cross into the destination represented beyond it.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 1,
+    "name": "Central card becomes the next scene",
+    "signature": "Establish a small set of source cards; select the central destination card; expand it while preserving its focal anchor until it fills the frame.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 2,
+    "name": "Tiles reassemble into one coherent image",
+    "signature": "Show three or four rectilinear source tiles; move them into their true spatial positions; remove seams only after the complete destination is recognizable.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 3,
+    "name": "Interface window opens into its subject",
+    "signature": "Orient the interface or document; approach one authentic media window; cross its border at full scale into the represented world.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 4,
+    "name": "Page turns edge-on to reveal destination",
+    "signature": "Treat one page or card as a physical plane; rotate it edge-on; let the destination appear on the far side; square the destination to camera.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 5,
+    "name": "Object aperture carries the cut",
+    "signature": "Find a genuine circular or bounded aperture in the source; center the destination through it; pass through the aperture and let its edge leave frame.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 6,
+    "name": "Foreground wipe replaces the collage world",
+    "signature": "Move a real foreground object across the collage; hide the asset swap at full occlusion; clear into the coherent destination scene.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 7,
+    "name": "Rectilinear panels align into a passage",
+    "signature": "Arrange vertical and horizontal panels from separate sources; shift them into one aligned opening; enter only after the passage reads as continuous space.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "SP03",
+    "variant_no": 8,
+    "name": "Evidence planes form a traversable corridor",
+    "signature": "Pull scattered evidence cards into depth order; fly through them as each contributes one clue; exit the last plane into the resolved world.",
+    "edit_form": "portrait_portal",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 1,
+    "name": "Contrast isolate and restore",
+    "signature": "Establish the complete system; reduce surrounding contrast; keep one component unchanged; explain its action; restore the whole at the same framing.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 2,
+    "name": "Push to part, pull to consequence",
+    "signature": "Orient the whole; approach one component without changing object orientation; show its operation; pull back to reveal the whole-system consequence.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 3,
+    "name": "Ghosted whole preserves orientation",
+    "signature": "Show the full system; ghost nonselected parts rather than removing them; operate the selected component; return all parts to normal opacity.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 4,
+    "name": "Component steps out and returns",
+    "signature": "Establish the assembly; translate one component along a real removal axis; inspect its interface; replace it and resume the full system.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 5,
+    "name": "Local cutaway window",
+    "signature": "Hold the whole object intact; open one bounded cutaway only over the selected component; show its action; close the window to restore the exterior.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 6,
+    "name": "Orientation lock before isolation",
+    "signature": "Rotate the whole once to establish front, side, and selected face; stop on a declared orientation; isolate the part without further camera drift; reintegrate.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 7,
+    "name": "Effect trace returns to the source part",
+    "signature": "Start with the full-system effect; trace backward to the responsible component; show the component action; trace forward and restore the whole effect.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 8,
+    "name": "One of many, then systemic repetition",
+    "signature": "Show the complete repeated system; isolate one representative unit; demonstrate its operation; pull back as the same state propagates to its peers.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 9,
+    "name": "Human action enters the system hierarchy",
+    "signature": "Orient a person and complete system; follow one human input into the selected component; continue through its downstream effect; return to human-scale consequence.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX01",
+    "variant_no": 10,
+    "name": "Nested system dive and reassembly",
+    "signature": "Begin with the hero whole; enter through two nested component levels; operate the deepest mechanism; reverse the exact spatial path as every level reassembles.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 1,
+    "name": "Outer shell fades for one interior",
+    "signature": "Establish the intact object; lower only the shell opacity; keep the selected interior solid; demonstrate it; restore the shell without changing view.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 2,
+    "name": "Real lid or panel opens",
+    "signature": "Show the closed object; hinge or slide the authentic access panel; reveal the internal component; close the same panel after the explanation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 3,
+    "name": "Layer stack separates on one axis",
+    "signature": "Orient the intact stack; separate layers along their real assembly axis in hierarchy order; inspect one interface; compress back to intact.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 4,
+    "name": "Radial components expose the core",
+    "signature": "Start intact; move only the surrounding radial components outward along their mounts; reveal and operate the core; return the ring around it.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 5,
+    "name": "Section plane travels through the object",
+    "signature": "Introduce a single sectional plane at the exterior; sweep it through the object; pause at the critical interior relation; remove the plane and restore exterior.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 6,
+    "name": "X-ray handoff to physical interior",
+    "signature": "Crossfade the intact exterior to an aligned x-ray view; select one interior form; transition that form into a solid cutaway model for explanation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 7,
+    "name": "Assembly runs backward into inspection",
+    "signature": "Open on separated parts with clear hierarchy; assemble them in causal order; stop before the final shell; inspect the internal interface; complete the assembly.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 8,
+    "name": "Access panels open in service order",
+    "signature": "Establish the intact system; open sequential service panels according to real access order; expose the target; reverse the closure sequence on exit.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 9,
+    "name": "Exploded orbit preserves every connector",
+    "signature": "Separate the full 3D assembly while connector paths remain visible; orbit once around the critical hierarchy; rejoin parts along those paths into the hero whole.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX02",
+    "variant_no": 10,
+    "name": "Building envelope peels to occupied mechanism",
+    "signature": "Orient the full building or environment; remove envelope layers from outside inward; reveal people and mechanism operating together; restore the exterior at scale.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 1,
+    "name": "Three-stage trigger chain",
+    "signature": "Orient input, transmission component, and output; fire the input; animate transmission only after contact; change the output last and hold its consequence.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 2,
+    "name": "Pulse traverses one channel",
+    "signature": "Locate the channel origin; launch one pulse; follow it without overtaking; reveal the output state exactly when the pulse arrives.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 3,
+    "name": "Material flow exposes a bottleneck",
+    "signature": "Start material at the input; trace its motion through two stages; visibly slow and accumulate at the bottleneck; release into the measured output.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 4,
+    "name": "Lever transfers motion through gears",
+    "signature": "Show force applied to the lever; rotate each connected gear only after tooth contact; move the final actuator; pull back to show the produced result.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 5,
+    "name": "Signal branches and reconverges",
+    "signature": "Trigger one signal; split it at a real branch; follow both routes with staggered timing; reconverge them at the component that produces the output.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 6,
+    "name": "Feedback changes the original input",
+    "signature": "Run input through transmission to output; route a visible return signal from output; modify the input state only when feedback arrives; show the stabilized loop.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 7,
+    "name": "Threshold accumulation triggers a state",
+    "signature": "Add discrete input increments; show the stored quantity rising; keep output unchanged below threshold; trigger one clear output transformation at crossing.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "label_measurement",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 8,
+    "name": "Parallel inputs converge on one result",
+    "signature": "Orient two independent inputs; activate them at different moments; trace both to a shared component; reveal output only after both conditions are satisfied.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 9,
+    "name": "Macro cause dives micro, returns macro",
+    "signature": "Show the large-scale trigger; enter the affected material or subsystem; animate the microscopic transmission; pull back to the visible macroscopic consequence.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX03",
+    "variant_no": 10,
+    "name": "Failure cascade arrested at one component",
+    "signature": "Trigger a multi-component failure in correct causal order; let the cascade approach a critical output; activate one intervention; reverse or halt downstream changes and show recovery.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 1,
+    "name": "Origin-to-destination route",
+    "signature": "Orient the full route; mark the origin; trace one continuous path; stop at the destination; hold origin and destination relationship.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 2,
+    "name": "One branch selected from alternatives",
+    "signature": "Show the shared origin and available branches; travel to the decision point; emphasize one criterion; continue only on the selected branch.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 3,
+    "name": "Bottleneck slows the trace",
+    "signature": "Advance a trace at stable speed; decelerate at the bottleneck; show the accumulating queue or pressure; resume only after the constraint changes.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 4,
+    "name": "Reverse trace finds the source",
+    "signature": "Open on the visible result; trace backward along the route; pause at each causal junction; finish on the originating input or decision.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 5,
+    "name": "Timeline path makes a gap visible",
+    "signature": "Orient start and end on a timeline; reveal known events in order; leave one deliberate spatial gap; stop the trace at that missing interval.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "intentional_music_stop",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 6,
+    "name": "Network hops expose dependency order",
+    "signature": "Locate source and destination nodes; activate one connection at a time; keep prior nodes visible but quiet; reveal the dependency chain on arrival.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 7,
+    "name": "Map trace becomes physical travel",
+    "signature": "Trace the route on a map; align a moving marker with a real vehicle or subject; transition into physical footage while preserving route direction; arrive in-world.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 8,
+    "name": "Multi-floor path through a building",
+    "signature": "Orient the building exterior; enter the correct floor; trace through rooms and vertical circulation; exit at the destination while preserving floor context.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 9,
+    "name": "Decision branch shows downstream cost",
+    "signature": "Trace to a fork; follow option A briefly to its consequence; reset to the same fork; follow option B; end with both outcomes spatially related.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX04",
+    "variant_no": 10,
+    "name": "Route crosses map, section, and lived world",
+    "signature": "Begin on geographic overview; hand the same path into a sectional mechanism view; continue it into human-scale footage; preserve the moving anchor through every representation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 1,
+    "name": "Empty system becomes populated",
+    "signature": "Lock the system framing; introduce contents in real entry order; show the final populated operating state; preserve object orientation throughout.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 2,
+    "name": "Closed system opens and works",
+    "signature": "Establish the closed state; perform the authentic opening action; reveal the newly available operation; return to the same exterior anchor.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 3,
+    "name": "Dry-to-wet propagation",
+    "signature": "Hold one environment or material; introduce liquid at its source; let the wet boundary propagate physically; reveal the functional consequence at saturation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 4,
+    "name": "Intact exterior becomes cutaway state",
+    "signature": "Begin with the intact object; transform only a bounded exterior region to cutaway; operate the interior; restore intact state at the same camera position.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 5,
+    "name": "Stalled mechanism restarts",
+    "signature": "Show the system halted with a visible constraint; remove or correct that constraint; start components in causal order; hold the stable operating state.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 6,
+    "name": "Seasonal state alters operation",
+    "signature": "Lock geography and structures; transform one environmental season or condition; update only the mechanisms affected by that change; compare the new operation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 7,
+    "name": "Contaminated flow becomes clean",
+    "signature": "Trace contaminated input into the process; perform each treatment state in order; reveal clean output; keep a before sample visible until comparison resolves.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 8,
+    "name": "Chaotic set organizes by rule",
+    "signature": "Begin with a genuinely unordered set; introduce one sorting or alignment rule; move each item only when classified; reveal the ordered functional whole.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 9,
+    "name": "Intervention transforms problem to solution",
+    "signature": "Establish problem state and its symptom; enter the intervention at the causal point; propagate changes through the system; pull back to the solved whole.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "EX05",
+    "variant_no": 10,
+    "name": "Three-state reversible cycle",
+    "signature": "Orient the stable system; transform A to B through visible mechanism; continue B to C; reverse the causal route back to A without hiding intermediate states.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 1,
+    "name": "Synchronized start, divergent finish",
+    "signature": "Align both assets at the same starting state; begin the shared action together; let only the causal difference diverge; freeze on the two outcomes.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 2,
+    "name": "Same action, different result",
+    "signature": "Frame both subjects at matched scale; trigger the same action simultaneously; hold the resulting difference while all irrelevant motion stops.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 3,
+    "name": "Physical size on a shared baseline",
+    "signature": "Place both subjects against one legitimate scale baseline; reveal the smaller first, then the larger; hold both with one measurement cue.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "label_measurement",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 4,
+    "name": "Locked before-after divider",
+    "signature": "Align before and after images perfectly; move one vertical divider once to expose the changed regions; stop at a frame showing both states clearly.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 5,
+    "name": "One criterion at a time",
+    "signature": "Hold both assets; introduce criterion one and isolate its difference; clear it; introduce criterion two; finish on the criterion that changes the conclusion.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "light_contrast",
+    "audio_profile": "voice_only",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 6,
+    "name": "Parallel timelines reveal delay",
+    "signature": "Start two timelines at the same event; advance them together; pause one when it diverges; keep the other moving to expose the time difference.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 7,
+    "name": "Matched process, different bottleneck",
+    "signature": "Run the same process on both sides; trace each to its distinct bottleneck; hold there; resume to show how the constraint changes output.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR01",
+    "variant_no": 8,
+    "name": "Blind outcome, criterion reveal",
+    "signature": "Show two outcomes without labels; allow a neutral first read; reveal the single comparison criterion; recompose attention to the evidence that determines the result.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 1,
+    "name": "Claim to counterexample",
+    "signature": "Establish claim A with its strongest supporting image; cut to one direct counterexample on the rebuttal clause; hold the contradictory property.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 2,
+    "name": "Conventional view yields to mechanism",
+    "signature": "Show the familiar surface explanation; maintain framing while a cutaway or causal layer appears; let the hidden mechanism replace the first reading.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 3,
+    "name": "Same footage, new evidence frame",
+    "signature": "Play one ambiguous shot; freeze at the relevant moment; reveal the missing context or measurement; replay the moment under the corrected interpretation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "crop_dim_blur",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 4,
+    "name": "Apparent cause becomes effect",
+    "signature": "Present the common causal direction; pause at the presumed link; reverse the trace using evidence; finish with the corrected direction held.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 5,
+    "name": "Quotation challenged by measured result",
+    "signature": "Show the brief quoted position; cut to the measurement method; reveal the result; retain only the quoted keyword needed for contrast.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 6,
+    "name": "Surface symptom opens to hidden driver",
+    "signature": "Establish the visible symptom; enter or peel beneath it; locate and operate the hidden driver; return to the same symptom as it changes.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 7,
+    "name": "Certainty widens into a range",
+    "signature": "Present a precise conventional value; introduce the omitted variability; transform the point value into a bounded range; hold the uncertainty as the corrected claim.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "label_measurement",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR02",
+    "variant_no": 8,
+    "name": "Opposing readings resolve into synthesis",
+    "signature": "Establish thesis and antithesis as full, legible states; reveal the condition under which each holds; recompose both into a third synthesis frame.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 1,
+    "name": "Repair in the same locked shot",
+    "signature": "Hold problem state in a fixed frame; perform one visible corrective action; let the system settle into the solution without replacing the shot.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 2,
+    "name": "Matched problem-solution cut",
+    "signature": "Establish the problem around a stable anchor; hard-cut to the solved state with that anchor unchanged; hold only the corrected property.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 3,
+    "name": "Obstruction removed, flow restored",
+    "signature": "Trace flow until it stops at the obstruction; remove the obstruction visibly; resume the same trace through to the output.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 4,
+    "name": "Clutter reduces to the needed control",
+    "signature": "Show an overloaded interface or system; group and remove irrelevant elements by function; preserve the essential control; demonstrate the simplified operation.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 5,
+    "name": "Failure dip, solution pickup",
+    "signature": "Let the failed action land without a hit; dip the music; reveal the intervention; restore the music as the same action succeeds.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 6,
+    "name": "Struggle, tool, resolved action",
+    "signature": "Show a person failing at one action; cut on their reach to the correct tool; complete the action with the tool; hold the changed outcome.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 7,
+    "name": "Detour collapses to direct route",
+    "signature": "Trace the costly problem route; mark its delay; introduce the solution connection; reroute the same traveler through the shorter path.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "AR03",
+    "variant_no": 8,
+    "name": "System redesign resolves multiple symptoms",
+    "signature": "Establish several symptoms as effects of one layout; transform the mechanism at the root; propagate improvements outward; pull back to the stable redesigned whole.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "BR01",
+    "variant_no": 1,
+    "name": "Circle to eye or aperture",
+    "signature": "Close the outgoing shot on one circular subject; cut at matched center and scale to an eye, lens, or aperture; reveal the incoming context outward.",
+    "edit_form": "shape_match",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR01",
+    "variant_no": 2,
+    "name": "Hand-held rectangle to screen",
+    "signature": "Move a rectangular object toward a stable frame position; cut when its edges align with an incoming screen or window; continue into the new content.",
+    "edit_form": "shape_match",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR01",
+    "variant_no": 3,
+    "name": "Horizon line to structural edge",
+    "signature": "End on a strong horizon or shelf line; cut to an architectural or object edge at the same height; let the new subject emerge from that edge.",
+    "edit_form": "shape_match",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR01",
+    "variant_no": 4,
+    "name": "Rotating wheel to rotating mechanism",
+    "signature": "Match center, radius, and angular direction between two rotating objects; cut at a shared spoke angle; continue rotation before revealing the second scale.",
+    "edit_form": "shape_match",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR01",
+    "variant_no": 5,
+    "name": "Arch silhouette to doorway",
+    "signature": "Fill the frame with an outgoing arch or curved void; cut to a homologous doorway; travel through the incoming opening to establish place.",
+    "edit_form": "shape_match",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR01",
+    "variant_no": 6,
+    "name": "Vertical object to structural pillar",
+    "signature": "Raise or reveal a slender outgoing object; cut when it occupies the intended coordinate to an incoming pillar, tree, or tower; pull wide from the match.",
+    "edit_form": "shape_match",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR02",
+    "variant_no": 1,
+    "name": "Center anchor handoff",
+    "signature": "End with one outgoing focal subject centered; cut to the next priority at the same coordinate and similar scale; delay all secondary motion until the eye lands.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR02",
+    "variant_no": 2,
+    "name": "Eyeline places the incoming subject",
+    "signature": "Show the outgoing subject looking toward one screen position; cut to the incoming object exactly there; hold before reframing.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR02",
+    "variant_no": 3,
+    "name": "Upper-frame detail stays upper-frame",
+    "signature": "Finish on a meaningful detail in the upper safe region; cut to the next detail at the same coordinate; then reveal its new context downward.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR02",
+    "variant_no": 4,
+    "name": "Detail-scale continuity across worlds",
+    "signature": "End on a close detail; match the incoming focal point at equal apparent scale; allow the incoming camera to widen only after recognition.",
+    "edit_form": "position_match",
+    "primary_attention": "motion",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR02",
+    "variant_no": 5,
+    "name": "Moving anchor crosses the cut point",
+    "signature": "Track an outgoing focal anchor toward a chosen coordinate; cut exactly as it reaches that coordinate; continue its vector with the incoming anchor.",
+    "edit_form": "position_match",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR02",
+    "variant_no": 6,
+    "name": "Keyword lands on its physical referent",
+    "signature": "End with one central keyword; cut to a physical object occupying the same word mass and coordinate; let the word disappear as the object action begins.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "voice_only",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR03",
+    "variant_no": 1,
+    "name": "Pan vector carries the boundary",
+    "signature": "Accelerate into one motivated pan; cut while the frame is motion-blurred; enter the new shot with the same vector; decelerate onto the subject.",
+    "edit_form": "action_cut",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR03",
+    "variant_no": 2,
+    "name": "Passing person hides the cut",
+    "signature": "Let a person cross close to the lens; cut at full-body occlusion; continue their screen direction as the new environment clears.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR03",
+    "variant_no": 3,
+    "name": "Door close opens another place",
+    "signature": "Track a real door or panel closing over the frame; cut at full closure; reverse the same physical action to open on the destination.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "single_semantic_hit",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR03",
+    "variant_no": 4,
+    "name": "Shadow sweep changes the scene",
+    "signature": "Use a coherent cast shadow to cross the outgoing subject; replace the scene only inside full darkness; let the shadow continue off the incoming subject.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "light_contrast",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR03",
+    "variant_no": 5,
+    "name": "Foreground object passes the lens",
+    "signature": "Move a relevant object directly across the camera; hide the cut at maximum coverage; reveal a matched object action in the destination.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR03",
+    "variant_no": 6,
+    "name": "Enter darkness, exit another world",
+    "signature": "Approach a real tunnel, aperture, or unlit cavity; cross into full darkness; preserve motion and ambience; emerge from a homologous opening in the next world.",
+    "edit_form": "motivated_occlusion",
+    "primary_attention": "motion",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR04",
+    "variant_no": 1,
+    "name": "Incoming voice precedes the picture",
+    "signature": "Keep the outgoing image while the next speaker or narration clause begins; cut picture on the phrase that identifies the destination; retain the new voice.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "j_cut_voice_or_ambience",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR04",
+    "variant_no": 2,
+    "name": "Destination ambience arrives first",
+    "signature": "Hold the outgoing subject; fade in one unmistakable destination ambience; allow a reaction or pause; cut to its visual source without an added hit.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "environment_bridge",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR04",
+    "variant_no": 3,
+    "name": "Outgoing line trails into reaction",
+    "signature": "Cut from the speaker or source to the listener or consequence before the line ends; let the final words complete over the incoming image.",
+    "edit_form": "l_cut",
+    "primary_attention": "composition",
+    "audio_profile": "l_cut_voice_or_ambience",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "BR04",
+    "variant_no": 4,
+    "name": "Mechanism sound trails into the result",
+    "signature": "Cut picture from the operating mechanism to its output; carry the authentic mechanism sound through the cut; let it decay when the result stabilizes.",
+    "edit_form": "l_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "l_cut_voice_or_ambience",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR04",
+    "variant_no": 5,
+    "name": "Music motif previews the next image",
+    "signature": "Introduce a distinct musical figure under the outgoing shot; cut picture when the motif resolves; associate the incoming subject with that motif.",
+    "edit_form": "j_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "BR04",
+    "variant_no": 6,
+    "name": "Room tone masks a temporal jump",
+    "signature": "Hold continuous room or environmental tone; cut between two times or angles on a stable focal anchor; reveal the temporal change through picture only.",
+    "edit_form": "l_cut",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "functional"
+  },
+  {
+    "family_id": "PY01",
+    "variant_no": 1,
+    "name": "Separated parts return to the whole",
+    "signature": "Recall the isolated parts in their learned positions; move them back along authentic assembly paths; pull back only after the complete whole operates.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "PY01",
+    "variant_no": 2,
+    "name": "Opening image returns with new understanding",
+    "signature": "Match the opening hero frame; reveal the mechanism or relationship now understood inside that same composition; hold without adding a new claim.",
+    "edit_form": "position_match",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "PY01",
+    "variant_no": 3,
+    "name": "Causal path reverses into system view",
+    "signature": "Begin on the final output; trace backward through every explained component; collapse the trace; reveal all components operating together in the whole.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "PY01",
+    "variant_no": 4,
+    "name": "Multiple viewpoints converge in 3D",
+    "signature": "Bring previously seen detail, section, and wide views into spatial alignment; fuse them into one oriented 3D hero system; complete one final operating action.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "PY02",
+    "variant_no": 1,
+    "name": "Learned sequence, compressed",
+    "signature": "Replay three to five established visuals in the exact learned order; shorten each recognition beat; stop on one synthesis frame rather than another recap image.",
+    "edit_form": "clause_cut",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "PY02",
+    "variant_no": 2,
+    "name": "Recap tiles assemble a hierarchy",
+    "signature": "Bring back each established visual as one restrained tile; place it into its learned system position; finish on the complete hierarchy with all motion stopped.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "mechanism_causal_chain",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "PY02",
+    "variant_no": 3,
+    "name": "Callback motif travels through every stage",
+    "signature": "Reintroduce the original visual or audio motif; carry it through each learned stage as a persistent anchor; let its final form trigger the synthesis image.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "motion",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  },
+  {
+    "family_id": "PY03",
+    "variant_no": 1,
+    "name": "World resolves around one concluding line",
+    "signature": "Let the final environment finish its physical action; reveal one central or diegetically placed concluding line; hold the world and line through the music cadence.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "continuous_bed",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "PY03",
+    "variant_no": 2,
+    "name": "Pullback discovers the CTA object in-world",
+    "signature": "Begin on the resolved subject; pull back to reveal a real screen, plaque, book, tool, or doorway carrying the next action; stop before it becomes a generic card.",
+    "edit_form": "same_shot_transform",
+    "primary_attention": "composition",
+    "audio_profile": "music_dip_and_pickup",
+    "effort_tier": "enhanced"
+  },
+  {
+    "family_id": "PY03",
+    "variant_no": 3,
+    "name": "Last mechanism action closes the film",
+    "signature": "Complete one final causally earned action in the hero world; let its native sound and music cadence resolve together; hold the stable result, then cut cleanly to black.",
+    "edit_form": "clean_hard_cut",
+    "primary_attention": "sound_punctuation",
+    "audio_profile": "setup_riser_and_payoff",
+    "effort_tier": "hero"
+  }
+]

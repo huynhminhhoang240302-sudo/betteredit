@@ -1,0 +1,42 @@
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*.json
+secrets*.json
+
+# Dependencies and caches
+node_modules/
+.cache/
+.npm/
+.pnpm-store/
+__pycache__/
+*.pyc
+
+# Private and user-bound media
+/user-media/
+/private-media/
+/source-media/
+/source-analysis/
+/videos/
+/attachments/
+/downloads/
+*.blend1
+
+# Generated local work
+/renders/
+/tmp/
+/temp/
+/work/
+*.log
+*.tmp
+*.bak
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

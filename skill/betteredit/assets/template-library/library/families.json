@@ -1,0 +1,2465 @@
+{
+  "schema_version": "1.0",
+  "groups": {
+    "HK": {
+      "name": "Hook / entry",
+      "question": "Why should I keep watching?"
+    },
+    "ST": {
+      "name": "Structure / title",
+      "question": "Where am I in the story?"
+    },
+    "EV": {
+      "name": "Evidence / B-roll",
+      "question": "What proves or grounds this claim?"
+    },
+    "FO": {
+      "name": "Focus / typography",
+      "question": "What exactly should I notice?"
+    },
+    "SP": {
+      "name": "Spatial / 2.5D",
+      "question": "How can flat media become a coherent space?"
+    },
+    "EX": {
+      "name": "Explanation / mechanism",
+      "question": "How does the system work or change?"
+    },
+    "AR": {
+      "name": "Argument / comparison",
+      "question": "What is the meaningful difference or turn?"
+    },
+    "BR": {
+      "name": "Continuity / bridge",
+      "question": "How does attention travel into the next beat?"
+    },
+    "PY": {
+      "name": "Payoff / close",
+      "question": "What resolves, recombines, or remains?"
+    }
+  },
+  "duration_bands": {
+    "micro": {
+      "min_s": 0.35,
+      "default_s": 0.58,
+      "max_s": 0.8,
+      "purpose": "flash, match, or single mark"
+    },
+    "sting": {
+      "min_s": 0.8,
+      "default_s": 1.15,
+      "max_s": 1.5,
+      "purpose": "reset, keyword, proof cut, or step card"
+    },
+    "beat": {
+      "min_s": 1.5,
+      "default_s": 2,
+      "max_s": 2.5,
+      "purpose": "compact evidence, title move, or comparison"
+    },
+    "explain": {
+      "min_s": 2.5,
+      "default_s": 3.25,
+      "max_s": 4,
+      "purpose": "guided focus or multi-stage reveal"
+    },
+    "hold": {
+      "min_s": 4,
+      "default_s": 5.2,
+      "max_s": 6.5,
+      "purpose": "orientation, developed evidence, or mechanism"
+    },
+    "hero": {
+      "min_s": 6.5,
+      "default_s": 8.1,
+      "max_s": 10,
+      "purpose": "causal mechanism, reassembly, or major payoff"
+    }
+  },
+  "families": [
+    {
+      "id": "HK01",
+      "group_code": "HK",
+      "group": "Hook / entry",
+      "slug": "blackout-to-proof",
+      "name": "Blackout-to-proof launch",
+      "narrative_job": "prove value before explanation",
+      "narrative_job_key": "prove_value_before_explanation",
+      "template_count": 7,
+      "duration_distribution": {
+        "micro": 1,
+        "sting": 3,
+        "beat": 3,
+        "explain": 0,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "proof_fragment",
+          "role": "process or provenance flash",
+          "kinds": [
+            "video",
+            "image",
+            "screenshot"
+          ],
+          "required": false,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        },
+        {
+          "id": "hero_media",
+          "role": "decisive proof or subject",
+          "kinds": [
+            "video",
+            "image",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "hook_phrase",
+          "required": false,
+          "max_words": 6,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "appear"
+      },
+      "source_lineage": "quick_mix_2026"
+    },
+    {
+      "id": "HK02",
+      "group_code": "HK",
+      "group": "Hook / entry",
+      "slug": "human-witness-to-world",
+      "name": "Human witness to world reveal",
+      "narrative_job": "expand a human-scale observation into its world",
+      "narrative_job_key": "human_witness_to_world",
+      "template_count": 7,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 3,
+        "explain": 2,
+        "hold": 1,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "observer",
+          "role": "human or object-scale witness",
+          "kinds": [
+            "video",
+            "image"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "world",
+          "role": "environment or system context",
+          "kinds": [
+            "video",
+            "image",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "context_line",
+          "required": false,
+          "max_words": 8,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "appear"
+      },
+      "source_lineage": "quick_mix_2026"
+    },
+    {
+      "id": "HK03",
+      "group_code": "HK",
+      "group": "Hook / entry",
+      "slug": "contradiction-question",
+      "name": "Contradiction or question reveal",
+      "narrative_job": "break an expectation and hold the question",
+      "narrative_job_key": "break_expectation_and_hold_question",
+      "template_count": 7,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 3,
+        "explain": 3,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "baseline",
+          "role": "expected state",
+          "kinds": [
+            "video",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "anomaly",
+          "role": "contradicting state or evidence",
+          "kinds": [
+            "video",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "question",
+          "required": true,
+          "max_words": 10,
+          "typography_role": "display_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "transform"
+      },
+      "source_lineage": "master_guides"
+    },
+    {
+      "id": "HK04",
+      "group_code": "HK",
+      "group": "Hook / entry",
+      "slug": "promise-stack",
+      "name": "Promise-stack evidence burst",
+      "narrative_job": "open several concrete loops without explaining them yet",
+      "narrative_job_key": "open_concrete_loops",
+      "template_count": 7,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 2,
+        "beat": 3,
+        "explain": 2,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "evidence_set",
+          "role": "promise-stack proof items",
+          "kinds": [
+            "video",
+            "image",
+            "screenshot",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "3..5",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "hook_phrase",
+          "required": false,
+          "max_words": 7,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "appear"
+      },
+      "source_lineage": "colosseum_opening"
+    },
+    {
+      "id": "ST01",
+      "group_code": "ST",
+      "group": "Structure / title",
+      "slug": "centered-serif-title",
+      "name": "Centered serif title build",
+      "narrative_job": "state one chapter proposition with controlled accrual",
+      "narrative_job_key": "state_chapter_proposition",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 3,
+        "explain": 3,
+        "hold": 1,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "title_background",
+          "role": "optional atmosphere or selected media",
+          "kinds": [
+            "video",
+            "image",
+            "texture"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "title",
+          "required": true,
+          "max_words": 10,
+          "typography_role": "display_serif"
+        },
+        {
+          "id": "subtitle",
+          "required": false,
+          "max_words": 14,
+          "typography_role": "display_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "appear"
+      },
+      "source_lineage": "quick_mix_2026"
+    },
+    {
+      "id": "ST02",
+      "group_code": "ST",
+      "group": "Structure / title",
+      "slug": "portrait-portal",
+      "name": "Portrait portal stage",
+      "narrative_job": "make a vertical artifact intentional inside another canvas",
+      "narrative_job_key": "portrait_portal_stage",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 2,
+        "explain": 4,
+        "hold": 2,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "portrait_media",
+          "role": "intentional vertical artifact",
+          "kinds": [
+            "video",
+            "image",
+            "screenshot"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "title",
+          "required": false,
+          "max_words": 8,
+          "typography_role": "display_serif"
+        },
+        {
+          "id": "subtitle",
+          "required": false,
+          "max_words": 12,
+          "typography_role": "display_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "enter",
+        "object_verb": "appear"
+      },
+      "source_lineage": "quick_mix_2026"
+    },
+    {
+      "id": "ST03",
+      "group_code": "ST",
+      "group": "Structure / title",
+      "slug": "chapter-step-card",
+      "name": "Chapter or step impact card",
+      "narrative_job": "punctuate a real structural turn with one readable statement",
+      "narrative_job_key": "punctuate_structural_turn",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 1,
+        "sting": 3,
+        "beat": 3,
+        "explain": 1,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "chapter_background",
+          "role": "optional quiet backing field",
+          "kinds": [
+            "video",
+            "image",
+            "texture"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "chapter_title",
+          "required": true,
+          "max_words": 6,
+          "typography_role": "display_serif"
+        },
+        {
+          "id": "plain_ordinal",
+          "required": false,
+          "max_words": 3,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "appear"
+      },
+      "source_lineage": "quick_mix_2026"
+    },
+    {
+      "id": "EV01",
+      "group_code": "EV",
+      "group": "Evidence / B-roll",
+      "slug": "cinematic-hard-cut-pair",
+      "name": "Cinematic hard-cut pair",
+      "narrative_job": "join two shots by claim, action, contrast, or consequence",
+      "narrative_job_key": "join_two_shots_by_meaning",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 3,
+        "sting": 3,
+        "beat": 2,
+        "explain": 0,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "media_a",
+          "role": "setup, claim, or cause",
+          "kinds": [
+            "video",
+            "image"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "media_b",
+          "role": "proof, contrast, or result",
+          "kinds": [
+            "video",
+            "image"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "evidence_line",
+          "required": false,
+          "max_words": 8,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "appear"
+      },
+      "source_lineage": "quick_mix_2026"
+    },
+    {
+      "id": "EV02",
+      "group_code": "EV",
+      "group": "Evidence / B-roll",
+      "slug": "detail-to-wide",
+      "name": "Detail to wide reveal",
+      "narrative_job": "convert a clue into spatial or conceptual context",
+      "narrative_job_key": "detail_to_context",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 2,
+        "beat": 4,
+        "explain": 2,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "detail",
+          "role": "clue or close detail",
+          "kinds": [
+            "video",
+            "image"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "wide",
+          "role": "contextual wide",
+          "kinds": [
+            "video",
+            "image",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "context_line",
+          "required": false,
+          "max_words": 8,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "appear"
+      },
+      "source_lineage": "quick_mix_2026"
+    },
+    {
+      "id": "EV03",
+      "group_code": "EV",
+      "group": "Evidence / B-roll",
+      "slug": "aerial-location",
+      "name": "Aerial or location orientation",
+      "narrative_job": "locate the viewer before explaining a place or system",
+      "narrative_job_key": "locate_viewer",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 2,
+        "explain": 3,
+        "hold": 3,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "location_media",
+          "role": "map, aerial, or establishing world",
+          "kinds": [
+            "video",
+            "image",
+            "map",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "map_overlay",
+          "role": "optional factual path or boundary",
+          "kinds": [
+            "vector",
+            "map"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "place_name",
+          "required": false,
+          "max_words": 5,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "scale_value",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "locate",
+        "object_verb": "travel"
+      },
+      "source_lineage": "colosseum_world"
+    },
+    {
+      "id": "EV04",
+      "group_code": "EV",
+      "group": "Evidence / B-roll",
+      "slug": "three-shot-escalation",
+      "name": "Three-shot evidence escalation",
+      "narrative_job": "increase specificity or consequence across three proofs",
+      "narrative_job_key": "escalate_evidence",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 2,
+        "beat": 3,
+        "explain": 3,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "evidence_triplet",
+          "role": "ordered evidence sequence",
+          "kinds": [
+            "video",
+            "image",
+            "screenshot"
+          ],
+          "required": true,
+          "quantity": "3",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "claim_line",
+          "required": false,
+          "max_words": 10,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "appear"
+      },
+      "source_lineage": "master_guides"
+    },
+    {
+      "id": "FO01",
+      "group_code": "FO",
+      "group": "Focus / typography",
+      "slug": "single-keyword",
+      "name": "Single-keyword emphasis",
+      "narrative_job": "make one short concept unmistakable without caption spam",
+      "narrative_job_key": "emphasize_keyword",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 2,
+        "sting": 3,
+        "beat": 3,
+        "explain": 0,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "supporting_media",
+          "role": "optional visual anchor",
+          "kinds": [
+            "video",
+            "image"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "keyword",
+          "required": true,
+          "max_words": 3,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "appear"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "FO02",
+      "group_code": "FO",
+      "group": "Focus / typography",
+      "slug": "number-stat-proof",
+      "name": "Number or stat proof",
+      "narrative_job": "give a number context, meaning, and a readable hold",
+      "narrative_job_key": "number_stat_proof",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 3,
+        "explain": 3,
+        "hold": 1,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "stat_evidence",
+          "role": "source or visual proof for the number",
+          "kinds": [
+            "screenshot",
+            "image",
+            "data"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "value",
+          "required": true,
+          "max_words": 3,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "unit",
+          "required": false,
+          "max_words": 3,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "meaning",
+          "required": true,
+          "max_words": 10,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "transform"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "FO03",
+      "group_code": "FO",
+      "group": "Focus / typography",
+      "slug": "guided-source-focus",
+      "name": "Guided source or screenshot focus",
+      "narrative_job": "move attention through real evidence one region at a time",
+      "narrative_job_key": "guide_source_focus",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 2,
+        "explain": 4,
+        "hold": 2,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "source_document",
+          "role": "document, page, screenshot, or interface",
+          "kinds": [
+            "screenshot",
+            "image",
+            "video"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "focus_label",
+          "required": false,
+          "max_words": 5,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "source_citation",
+          "required": false,
+          "max_words": 12,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "isolate",
+        "object_verb": "appear"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "SP01",
+      "group_code": "SP",
+      "group": "Spatial / 2.5D",
+      "slug": "layered-card-parallax",
+      "name": "Layered-card parallax",
+      "narrative_job": "turn selected flat assets into a navigable depth field",
+      "narrative_job_key": "layered_parallax_space",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 2,
+        "explain": 3,
+        "hold": 2,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "layer_set",
+          "role": "depth-separated selected assets",
+          "kinds": [
+            "image",
+            "video",
+            "vector"
+          ],
+          "required": true,
+          "quantity": "2..5",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "foreground",
+          "role": "optional foreground occluder",
+          "kinds": [
+            "image",
+            "video",
+            "vector",
+            "matte"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "title",
+          "required": false,
+          "max_words": 8,
+          "typography_role": "display_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "enter",
+        "object_verb": "assemble"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "SP02",
+      "group_code": "SP",
+      "group": "Spatial / 2.5D",
+      "slug": "photo-depth-push",
+      "name": "Photo depth push",
+      "narrative_job": "reveal a relation or hidden context within one still",
+      "narrative_job_key": "photo_depth_reveal",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 2,
+        "explain": 4,
+        "hold": 2,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "hero_image",
+          "role": "high-resolution still",
+          "kinds": [
+            "image"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "subject_matte",
+          "role": "optional subject isolation",
+          "kinds": [
+            "matte"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        },
+        {
+          "id": "depth_map",
+          "role": "optional depth guidance",
+          "kinds": [
+            "depth_map"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "label",
+          "required": false,
+          "max_words": 5,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "approach",
+        "object_verb": "appear"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "SP03",
+      "group_code": "SP",
+      "group": "Spatial / 2.5D",
+      "slug": "collage-portal",
+      "name": "Collage or portal transition",
+      "narrative_job": "cross from selected media into the next story world",
+      "narrative_job_key": "cross_media_portal",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 2,
+        "beat": 3,
+        "explain": 2,
+        "hold": 1,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "source_set",
+          "role": "collage or portal sources",
+          "kinds": [
+            "video",
+            "image",
+            "screenshot"
+          ],
+          "required": true,
+          "quantity": "2..4",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "destination",
+          "role": "path destination",
+          "kinds": [
+            "point",
+            "vector",
+            "video",
+            "image",
+            "three_d_object"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "bridge_phrase",
+          "required": false,
+          "max_words": 6,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "enter",
+        "object_verb": "assemble"
+      },
+      "source_lineage": "master_guides"
+    },
+    {
+      "id": "EX01",
+      "group_code": "EX",
+      "group": "Explanation / mechanism",
+      "slug": "whole-part-whole",
+      "name": "Whole to part to whole isolate",
+      "narrative_job": "preserve orientation while explaining one component",
+      "narrative_job_key": "whole_part_whole",
+      "template_count": 10,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 1,
+        "explain": 4,
+        "hold": 4,
+        "hero": 1
+      },
+      "canonical_slots": [
+        {
+          "id": "master_system",
+          "role": "persistent whole",
+          "kinds": [
+            "video",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "selected_component",
+          "role": "part under explanation",
+          "kinds": [
+            "image",
+            "vector",
+            "three_d_object"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "component_label",
+          "required": false,
+          "max_words": 5,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "function_line",
+          "required": false,
+          "max_words": 10,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "isolate",
+        "object_verb": "separate"
+      },
+      "source_lineage": "colosseum_world"
+    },
+    {
+      "id": "EX02",
+      "group_code": "EX",
+      "group": "Explanation / mechanism",
+      "slug": "cutaway-exploded",
+      "name": "Cutaway or exploded reveal",
+      "narrative_job": "expose hierarchy and restore the intact object",
+      "narrative_job_key": "cutaway_exploded_hierarchy",
+      "template_count": 10,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 1,
+        "explain": 4,
+        "hold": 4,
+        "hero": 1
+      },
+      "canonical_slots": [
+        {
+          "id": "intact_object",
+          "role": "assembled object or environment",
+          "kinds": [
+            "video",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "part_set",
+          "role": "separable hierarchy",
+          "kinds": [
+            "image",
+            "vector",
+            "three_d_object"
+          ],
+          "required": true,
+          "quantity": "2..8",
+          "user_selected": true,
+          "focal_anchor_required": false,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "part_label",
+          "required": false,
+          "max_words": 5,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "separate"
+      },
+      "source_lineage": "colosseum_world"
+    },
+    {
+      "id": "EX03",
+      "group_code": "EX",
+      "group": "Explanation / mechanism",
+      "slug": "causal-chain",
+      "name": "Input to transmission to output causal sequence",
+      "narrative_job": "show how an upstream action produces a downstream result",
+      "narrative_job_key": "show_input_transmission_output",
+      "template_count": 10,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 0,
+        "explain": 3,
+        "hold": 5,
+        "hero": 2
+      },
+      "canonical_slots": [
+        {
+          "id": "trigger",
+          "role": "upstream input or action",
+          "kinds": [
+            "video",
+            "image",
+            "vector",
+            "three_d_object"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "component_chain",
+          "role": "causal transmission components",
+          "kinds": [
+            "vector",
+            "three_d_object",
+            "masked_image"
+          ],
+          "required": true,
+          "quantity": "2..5",
+          "user_selected": true,
+          "focal_anchor_required": false,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "result",
+          "role": "visible downstream consequence",
+          "kinds": [
+            "video",
+            "image",
+            "vector",
+            "three_d_object"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "input_label",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "output_label",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "operate",
+        "object_verb": "transfer"
+      },
+      "source_lineage": "colosseum_world"
+    },
+    {
+      "id": "EX04",
+      "group_code": "EX",
+      "group": "Explanation / mechanism",
+      "slug": "flow-path-trace",
+      "name": "Flow or path trace",
+      "narrative_job": "follow a route, process, network, or constraint to its consequence",
+      "narrative_job_key": "trace_route_to_consequence",
+      "template_count": 10,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 1,
+        "explain": 4,
+        "hold": 4,
+        "hero": 1
+      },
+      "canonical_slots": [
+        {
+          "id": "path_world",
+          "role": "map, route, process, or network",
+          "kinds": [
+            "map",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "origin",
+          "role": "path origin",
+          "kinds": [
+            "point",
+            "vector",
+            "three_d_object"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "destination",
+          "role": "path destination",
+          "kinds": [
+            "point",
+            "vector",
+            "video",
+            "image",
+            "three_d_object"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "path_label",
+          "required": false,
+          "max_words": 5,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "value",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "trace",
+        "object_verb": "travel"
+      },
+      "source_lineage": "colosseum_world"
+    },
+    {
+      "id": "EX05",
+      "group_code": "EX",
+      "group": "Explanation / mechanism",
+      "slug": "same-shot-state",
+      "name": "Same-shot state transform",
+      "narrative_job": "compare meaningful states without losing the object",
+      "narrative_job_key": "same_shot_state_transform",
+      "template_count": 10,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 2,
+        "explain": 4,
+        "hold": 2,
+        "hero": 1
+      },
+      "canonical_slots": [
+        {
+          "id": "state_system",
+          "role": "persistent subject across states",
+          "kinds": [
+            "video",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "state_assets",
+          "role": "optional textures, mattes, or mechanisms",
+          "kinds": [
+            "image",
+            "vector",
+            "three_d_object",
+            "matte"
+          ],
+          "required": false,
+          "quantity": "0..4",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "state_a",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "state_b",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "operate",
+        "object_verb": "transform"
+      },
+      "source_lineage": "colosseum_world"
+    },
+    {
+      "id": "AR01",
+      "group_code": "AR",
+      "group": "Argument / comparison",
+      "slug": "split-comparison",
+      "name": "Split-screen comparison",
+      "narrative_job": "compare one criterion at a time under matched conditions",
+      "narrative_job_key": "compare_matched_conditions",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 2,
+        "explain": 4,
+        "hold": 2,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "side_a",
+          "role": "comparison state A",
+          "kinds": [
+            "video",
+            "image",
+            "data",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "side_b",
+          "role": "comparison state B",
+          "kinds": [
+            "video",
+            "image",
+            "data",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "criterion",
+          "required": true,
+          "max_words": 6,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "label_a",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "label_b",
+          "required": false,
+          "max_words": 4,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "compare",
+        "object_verb": "appear"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "AR02",
+      "group_code": "AR",
+      "group": "Argument / comparison",
+      "slug": "thesis-antithesis",
+      "name": "Thesis to antithesis pivot",
+      "narrative_job": "earn a reversal and leave a synthesis",
+      "narrative_job_key": "thesis_antithesis_synthesis",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 3,
+        "explain": 3,
+        "hold": 1,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "claim_a_media",
+          "role": "optional thesis evidence",
+          "kinds": [
+            "video",
+            "image",
+            "screenshot"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        },
+        {
+          "id": "claim_b_media",
+          "role": "optional antithesis evidence",
+          "kinds": [
+            "video",
+            "image",
+            "screenshot"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "smart_crop",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "claim_a",
+          "required": true,
+          "max_words": 9,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "claim_b",
+          "required": true,
+          "max_words": 9,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "synthesis",
+          "required": false,
+          "max_words": 10,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "transform"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "AR03",
+      "group_code": "AR",
+      "group": "Argument / comparison",
+      "slug": "problem-solution",
+      "name": "Problem to solution turn",
+      "narrative_job": "make the solution legible as a state or mechanism change",
+      "narrative_job_key": "problem_solution_turn",
+      "template_count": 8,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 1,
+        "beat": 2,
+        "explain": 4,
+        "hold": 1,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "problem_state",
+          "role": "problem evidence or state",
+          "kinds": [
+            "video",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "solution_state",
+          "role": "solution evidence or state",
+          "kinds": [
+            "video",
+            "image",
+            "vector_scene",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "mechanism",
+          "role": "optional bridge explaining the change",
+          "kinds": [
+            "video",
+            "image",
+            "vector",
+            "three_d_object"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "problem_line",
+          "required": false,
+          "max_words": 8,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "solution_line",
+          "required": false,
+          "max_words": 8,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reveal",
+        "object_verb": "transform"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "BR01",
+      "group_code": "BR",
+      "group": "Continuity / bridge",
+      "slug": "shape-object-match",
+      "name": "Shape or object match cut",
+      "narrative_job": "bridge scenes through one concrete visual analogue",
+      "narrative_job_key": "shape_object_match",
+      "template_count": 6,
+      "duration_distribution": {
+        "micro": 2,
+        "sting": 3,
+        "beat": 1,
+        "explain": 0,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "outgoing",
+          "role": "outgoing scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "incoming",
+          "role": "incoming scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "appear"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "BR02",
+      "group_code": "BR",
+      "group": "Continuity / bridge",
+      "slug": "eye-trace-match",
+      "name": "Eye-trace or position match",
+      "narrative_job": "place the next priority where the viewer is already looking",
+      "narrative_job_key": "eye_trace_position_match",
+      "template_count": 6,
+      "duration_distribution": {
+        "micro": 1,
+        "sting": 3,
+        "beat": 2,
+        "explain": 0,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "outgoing",
+          "role": "outgoing scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "incoming",
+          "role": "incoming scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "appear"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "BR03",
+      "group_code": "BR",
+      "group": "Continuity / bridge",
+      "slug": "direction-occlusion",
+      "name": "Direction or occlusion bridge",
+      "narrative_job": "carry motion through a cut or hide it in a motivated occluder",
+      "narrative_job_key": "direction_occlusion_bridge",
+      "template_count": 6,
+      "duration_distribution": {
+        "micro": 2,
+        "sting": 2,
+        "beat": 2,
+        "explain": 0,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "outgoing",
+          "role": "outgoing scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "incoming",
+          "role": "incoming scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "occluder",
+          "role": "motivated foreground cover",
+          "kinds": [
+            "video",
+            "image",
+            "matte",
+            "three_d_object"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [],
+      "semantic_motion": {
+        "camera_verb": "enter",
+        "object_verb": "travel"
+      },
+      "source_lineage": "master_guides"
+    },
+    {
+      "id": "BR04",
+      "group_code": "BR",
+      "group": "Continuity / bridge",
+      "slug": "audio-jl-bridge",
+      "name": "Audio-led J or L bridge",
+      "narrative_job": "let sound prepare or complete a restrained picture change",
+      "narrative_job_key": "audio_j_l_bridge",
+      "template_count": 6,
+      "duration_distribution": {
+        "micro": 1,
+        "sting": 2,
+        "beat": 2,
+        "explain": 1,
+        "hold": 0,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "outgoing",
+          "role": "outgoing scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "incoming",
+          "role": "incoming scene handle",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "bridge_audio",
+          "role": "incoming or trailing semantic sound",
+          "kinds": [
+            "voice",
+            "ambience",
+            "music",
+            "sfx"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": false,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [],
+      "semantic_motion": {
+        "camera_verb": "none",
+        "object_verb": "appear"
+      },
+      "source_lineage": "editing_tutorial"
+    },
+    {
+      "id": "PY01",
+      "group_code": "PY",
+      "group": "Payoff / close",
+      "slug": "reassembly-callback",
+      "name": "Reassembly or callback payoff",
+      "narrative_job": "return isolated parts to a newly understood whole",
+      "narrative_job_key": "reassemble_callback",
+      "template_count": 4,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 0,
+        "explain": 1,
+        "hold": 1,
+        "hero": 2
+      },
+      "canonical_slots": [
+        {
+          "id": "callback_assets",
+          "role": "previously learned parts or states",
+          "kinds": [
+            "video",
+            "image",
+            "render",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "2..6",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "resolved_whole",
+          "role": "recomposed system",
+          "kinds": [
+            "video",
+            "image",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "payoff_line",
+          "required": false,
+          "max_words": 10,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reintegrate",
+        "object_verb": "restore"
+      },
+      "source_lineage": "colosseum_world"
+    },
+    {
+      "id": "PY02",
+      "group_code": "PY",
+      "group": "Payoff / close",
+      "slug": "recap-cascade",
+      "name": "Recap cascade",
+      "narrative_job": "compress learned visuals in their established order",
+      "narrative_job_key": "recap_learned_order",
+      "template_count": 3,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 0,
+        "explain": 1,
+        "hold": 2,
+        "hero": 0
+      },
+      "canonical_slots": [
+        {
+          "id": "recap_set",
+          "role": "ordered established visuals",
+          "kinds": [
+            "video",
+            "image",
+            "render"
+          ],
+          "required": true,
+          "quantity": "3..5",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "synthesis",
+          "required": false,
+          "max_words": 10,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reintegrate",
+        "object_verb": "assemble"
+      },
+      "source_lineage": "master_guides"
+    },
+    {
+      "id": "PY03",
+      "group_code": "PY",
+      "group": "Payoff / close",
+      "slug": "final-synthesis",
+      "name": "Final synthesis or diegetic close",
+      "narrative_job": "resolve picture, argument, sound, and optional ask",
+      "narrative_job_key": "final_synthesis_close",
+      "template_count": 3,
+      "duration_distribution": {
+        "micro": 0,
+        "sting": 0,
+        "beat": 0,
+        "explain": 0,
+        "hold": 1,
+        "hero": 2
+      },
+      "canonical_slots": [
+        {
+          "id": "hero_environment",
+          "role": "final world or object",
+          "kinds": [
+            "video",
+            "image",
+            "three_d_scene"
+          ],
+          "required": true,
+          "quantity": "1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": {
+            "in": 0.25,
+            "out": 0.25
+          },
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "WAITING_FOR_USER_MATERIAL"
+        },
+        {
+          "id": "cta_object",
+          "role": "optional diegetic ask or destination",
+          "kinds": [
+            "image",
+            "vector",
+            "three_d_object"
+          ],
+          "required": false,
+          "quantity": "0..1",
+          "user_selected": true,
+          "focal_anchor_required": true,
+          "crop_policy": "anchor_preserving",
+          "handles_s": null,
+          "text_in_source_review": "required",
+          "provenance_and_rights": "required",
+          "missing_required_behavior": "omit_cleanly"
+        }
+      ],
+      "canonical_text_slots": [
+        {
+          "id": "closing_line",
+          "required": false,
+          "max_words": 12,
+          "typography_role": "text_serif"
+        },
+        {
+          "id": "cta",
+          "required": false,
+          "max_words": 6,
+          "typography_role": "text_serif"
+        }
+      ],
+      "semantic_motion": {
+        "camera_verb": "reintegrate",
+        "object_verb": "restore"
+      },
+      "source_lineage": "master_guides"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose a narrowly scoped improvement to the skill, library, or workflow.
+title: "[Feature]: "
+labels: [enhancement, triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Explain the editing or maintenance problem before proposing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Use case and evidence
+      description: Link a public example or describe a reproducible workflow without private material.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true

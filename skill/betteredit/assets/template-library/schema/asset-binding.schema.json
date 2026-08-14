@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.codex/master-video-system/asset-binding.schema.json",
+  "title": "User material binding for a canonical short-edit template",
+  "type": "object",
+  "additionalProperties": true,
+    "required": ["schema_version", "binding_id", "template_id", "style_pack_id", "target_duration_s", "aspect_profile", "assets", "text", "audio", "approval"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "binding_id": { "type": "string", "minLength": 3 },
+    "template_id": { "type": "string", "pattern": "^(HK|ST|EV|FO|SP|EX|AR|BR|PY)\\d{2}-\\d{2}$" },
+    "style_pack_id": { "type": ["string", "null"] },
+    "target_duration_s": { "type": "number", "minimum": 0.35, "maximum": 10 },
+    "narrative_purpose": { "type": ["string", "null"] },
+    "aspect_profile": { "enum": ["landscape_16_9", "portrait_9_16", "square_1_1"] },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["slot_id", "required", "accepted_kinds", "status", "path", "focal_anchor", "source_text_review", "rights_note"],
+        "properties": {
+          "slot_id": { "type": "string" },
+          "status": { "enum": ["WAITING_FOR_USER_MATERIAL", "optional_unbound", "provided", "approved", "rejected"] },
+          "required": { "type": "boolean" },
+          "accepted_kinds": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "path": { "type": ["string", "null"] },
+          "focal_anchor": { "type": ["array", "null"], "minItems": 2, "maxItems": 2, "items": { "type": "number", "minimum": 0, "maximum": 1 } },
+          "crop_or_timing_note": { "type": ["string", "null"] },
+          "source_text_review": { "enum": ["pending", "no_prominent_text", "approved_exception", "mask_or_crop", "replace_asset"] },
+          "rights_note": { "type": ["string", "null"] }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "status": { "enum": ["provided", "approved"] } }, "required": ["status"] },
+            "then": {
+              "properties": {
+                "path": { "type": "string", "minLength": 1 },
+                "rights_note": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "required": { "const": true }, "path": { "type": "null" } }, "required": ["required", "path"] },
+            "then": { "properties": { "status": { "const": "WAITING_FOR_USER_MATERIAL" } } }
+          },
+          {
+            "if": { "properties": { "status": { "const": "WAITING_FOR_USER_MATERIAL" } }, "required": ["status"] },
+            "then": { "properties": { "path": { "const": null } } }
+          }
+        ]
+      }
+    },
+    "text": { "type": "object", "additionalProperties": { "type": ["string", "null"] } },
+    "data_or_source_text": { "type": ["string", "null"] },
+    "audio": {
+      "type": "object",
+      "required": ["voice_path", "music_path", "sfx_paths", "cue_note"],
+      "properties": {
+        "voice_path": { "type": ["string", "null"] },
+        "music_path": { "type": ["string", "null"] },
+        "sfx_paths": { "type": "array", "items": { "type": "string" } },
+        "cue_note": { "type": ["string", "null"] }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "required": ["style_selected_by_user", "materials_selected_by_user", "first_frame_packet_approved"],
+      "properties": {
+        "style_selected_by_user": { "type": "boolean" },
+        "materials_selected_by_user": { "type": "boolean" },
+        "first_frame_packet_approved": { "type": "boolean" }
+      }
+    }
+  }
+}

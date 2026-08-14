@@ -1,0 +1,43 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check scripts
+        shell: bash
+        run: find tools scripts skill/betteredit/scripts -name '*.mjs' -print0 | xargs -0 -n1 node --check
+      - name: Validate maintainer library
+        run: node tools/validate-library.mjs
+      - name: Validate installed-skill library
+        run: node skill/betteredit/scripts/validate-library.mjs
+      - name: Audit public package
+        run: node tools/audit-public-package.mjs
+
+  previews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install media probes
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Validate preview sample
+        run: node tools/validate-previews.mjs --sample 24
+      - name: Validate installed-skill preview sample
+        run: node skill/betteredit/scripts/validate-previews.mjs --sample 24

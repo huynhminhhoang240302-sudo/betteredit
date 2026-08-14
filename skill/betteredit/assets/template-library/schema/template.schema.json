@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.codex/master-video-system/template.schema.json",
+  "title": "Canonical short-edit template specification",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version", "id", "family_id", "group", "name", "status",
+    "narrative", "timing", "canvas", "typography", "slots", "text_slots",
+    "choreography", "continuity", "spatial_composition", "audio", "quality", "hard_locks",
+    "material_binding_status"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "id": { "type": "string", "pattern": "^(HK|ST|EV|FO|SP|EX|AR|BR|PY)\\d{2}-\\d{2}$" },
+    "family_id": { "type": "string", "pattern": "^(HK|ST|EV|FO|SP|EX|AR|BR|PY)\\d{2}$" },
+    "group": { "type": "string", "minLength": 3 },
+    "name": { "type": "string", "minLength": 3 },
+    "status": { "enum": ["wireframe_spec", "content_bound", "preview_approved", "production_approved", "deprecated"] },
+    "narrative": {
+      "type": "object",
+      "required": ["job_key", "job", "question_answered", "signature", "selection_tags"],
+      "properties": {
+        "job_key": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "job": { "type": "string", "minLength": 8 },
+        "question_answered": { "type": "string", "minLength": 8 },
+        "signature": { "type": "string", "minLength": 20 },
+        "selection_tags": { "type": "array", "minItems": 3, "items": { "type": "string" } }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "required": ["band", "min_s", "default_s", "max_s", "internal_beats"],
+      "properties": {
+        "band": { "enum": ["micro", "sting", "beat", "explain", "hold", "hero"] },
+        "min_s": { "type": "number", "minimum": 0.35, "maximum": 10 },
+        "default_s": { "type": "number", "minimum": 0.35, "maximum": 10 },
+        "max_s": { "type": "number", "minimum": 0.35, "maximum": 10 },
+        "internal_beats": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["at", "event"],
+            "properties": {
+              "at": { "type": "number", "minimum": 0, "maximum": 1 },
+              "event": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "canvas": {
+      "type": "object",
+      "required": ["design_space", "supported_profiles", "safe_area_fraction", "reframe_strategy"]
+    },
+    "typography": {
+      "type": "object",
+      "required": ["policy", "fallback_class", "decorative_edge_text"],
+      "properties": {
+        "policy": { "const": "serif_only" },
+        "fallback_class": { "const": "serif" },
+        "decorative_edge_text": { "const": false },
+        "max_families_per_video": { "type": "integer", "minimum": 1, "maximum": 2 }
+      }
+    },
+    "slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "role", "kinds", "required", "quantity", "user_selected", "text_in_source_review", "provenance_and_rights"],
+        "properties": {
+          "id": { "type": "string" },
+          "role": { "type": "string" },
+          "kinds": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "required": { "type": "boolean" },
+          "user_selected": { "const": true },
+          "text_in_source_review": { "const": "required" },
+          "provenance_and_rights": { "const": "required" }
+        }
+      }
+    },
+    "text_slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "required", "max_words", "typography_role"],
+        "properties": {
+          "max_words": { "type": "integer", "minimum": 1, "maximum": 20 },
+          "typography_role": { "enum": ["display_serif", "text_serif", "caption_serif", "tabular_serif"] }
+        }
+      }
+    },
+    "choreography": {
+      "type": "object",
+      "required": ["signature", "edit_form", "camera_verb", "object_verb", "motion_profile", "primary_attention", "dominant_change_channels_max", "final_state_hold_required"],
+      "properties": {
+        "camera_verb": { "enum": ["none", "locate", "approach", "enter", "reveal", "isolate", "compare", "trace", "operate", "reintegrate"] },
+        "object_verb": { "enum": ["none", "appear", "separate", "assemble", "open", "close", "rotate", "travel", "transfer", "transform", "restore"] },
+        "dominant_change_channels_max": { "type": "integer", "minimum": 1, "maximum": 2 },
+        "final_state_hold_required": { "const": true }
+      }
+    },
+    "continuity": {
+      "type": "object",
+      "required": ["profile", "entry", "exit", "preferred_next_tags"]
+    },
+    "spatial_composition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode", "initial_mode", "settle_mode", "yaw_deg", "pitch_deg",
+        "roll_deg", "depth_layers", "perspective_strength", "screen_bias",
+        "semantic_role", "text_projection", "mirror_safe"
+      ],
+      "properties": {
+        "mode": {
+          "enum": ["frontal", "yaw_left", "yaw_right", "tilt_plane", "depth_stack", "corridor", "oblique_split", "orbital"]
+        },
+        "initial_mode": {
+          "enum": ["frontal", "yaw_left", "yaw_right", "tilt_plane", "depth_stack", "corridor", "oblique_split", "orbital"]
+        },
+        "settle_mode": {
+          "enum": ["frontal_for_read", "soft_oblique_hold", "spatial_hold"]
+        },
+        "yaw_deg": { "type": "number", "minimum": -30, "maximum": 30 },
+        "pitch_deg": { "type": "number", "minimum": -20, "maximum": 20 },
+        "roll_deg": { "type": "number", "minimum": -12, "maximum": 12 },
+        "depth_layers": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "perspective_strength": { "type": "number", "minimum": 0, "maximum": 1 },
+        "screen_bias": { "type": "number", "minimum": -1, "maximum": 1 },
+        "semantic_role": {
+          "enum": ["preserve_legibility", "compare_conditions", "trace_causality", "transition_space", "reveal_relation"]
+        },
+        "text_projection": { "enum": ["screen_facing", "diegetic_plane"] },
+        "mirror_safe": { "type": "boolean" }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "required": ["profile", "foreground_events_max", "voice_priority", "events", "event_positions_normalized"],
+      "properties": {
+        "foreground_events_max": { "type": "integer", "minimum": 0, "maximum": 2 },
+        "voice_priority": { "const": true },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["at", "type", "layer", "prominence", "semantic_role"],
+            "properties": {
+              "at": { "type": "number", "minimum": 0, "maximum": 1 },
+              "type": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+              "layer": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+              "prominence": { "enum": ["none", "low", "supporting", "primary"] },
+              "semantic_role": { "type": "string", "minLength": 8 }
+            }
+          }
+        },
+        "event_positions_normalized": { "type": "array", "items": { "type": "number", "minimum": 0, "maximum": 1 } }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["effort_tier", "primary_cue_count", "required_reviews"],
+      "properties": {
+        "effort_tier": { "enum": ["functional", "enhanced", "hero"] },
+        "primary_cue_count": { "const": 1 }
+      }
+    },
+    "hard_locks": {
+      "type": "object",
+      "required": [
+        "serif_only", "decorative_top_bottom_notes", "diagonal_or_crossing_line_fields",
+        "pseudo_wayfinding_counters", "small_accent_kicker_with_detached_rule",
+        "unapproved_asset_substitution", "structural_oblique_content_planes_allowed"
+      ],
+      "properties": {
+        "serif_only": { "const": true },
+        "decorative_top_bottom_notes": { "const": false },
+        "diagonal_or_crossing_line_fields": { "const": false },
+        "pseudo_wayfinding_counters": { "const": false },
+        "small_accent_kicker_with_detached_rule": { "const": false },
+        "unapproved_asset_substitution": { "const": false },
+        "structural_oblique_content_planes_allowed": { "const": true }
+      }
+    },
+    "material_binding_status": { "enum": ["WAITING_FOR_USER_SELECTION", "PARTIAL", "BOUND", "APPROVED"] }
+  }
+}

@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible BetterEdit problem without private media or credentials.
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach private footage, credentials, or unreleased client material. Report vulnerabilities through private vulnerability reporting.
+  - type: input
+    id: version
+    attributes:
+      label: BetterEdit version or commit
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Codex, operating system, and Node.js version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Use procedural or publicly shareable media only.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "binding_id": "WAITING_FOR_USER_SELECTION",
+  "template_id": "HK01-01",
+  "style_pack_id": null,
+  "target_duration_s": 0.58,
+  "aspect_profile": "landscape_16_9",
+  "assets": [
+    {
+      "slot_id": "proof_fragment",
+      "required": false,
+      "accepted_kinds": ["video", "image", "screenshot"],
+      "status": "optional_unbound",
+      "path": null,
+      "focal_anchor": null,
+      "crop_or_timing_note": null,
+      "source_text_review": "pending",
+      "rights_note": null
+    },
+    {
+      "slot_id": "hero_media",
+      "required": true,
+      "accepted_kinds": ["video", "image", "three_d_scene"],
+      "status": "WAITING_FOR_USER_MATERIAL",
+      "path": null,
+      "focal_anchor": null,
+      "crop_or_timing_note": null,
+      "source_text_review": "pending",
+      "rights_note": null
+    }
+  ],
+  "text": {},
+  "data_or_source_text": null,
+  "audio": { "voice_path": null, "music_path": null, "sfx_paths": [], "cue_note": null },
+  "approval": { "style_selected_by_user": false, "materials_selected_by_user": false, "first_frame_packet_approved": false }
+}
