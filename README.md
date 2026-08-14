@@ -1,56 +1,82 @@
 # BetterEdit
 
-**Open-source AI video editing skill for Codex, with 240 playable motion templates.**
+An open-source video editing skill for Codex. One install, 240 motion templates you can actually preview
 
-BetterEdit turns a topic, script, narration, footage, images, and audio into an intentional edit plan and a locally rendered video. Its installable Codex skill bundles the full editing guide, a machine-readable choreography library, an offline template browser, 240 real MP4 demonstrations, schemas, selectors, and safety rules.
+BetterEdit started as my own editing rulebook. I wanted Codex to remember how I structure a hook, when a shot should move, where sound cues belong, and which visual habits I never want to see again. Copying all of that into every task got old very quickly, so I turned it into a skill.
 
-Install **one skill**. No separate BetterEdit prompt pack, guide checkout, plugin, account, API key, or cloud service is required.
+Give it a topic, script, voiceover, footage, stills or audio. It helps plan the edit, choose real templates from the bundled library, bind your material to them, then render with the video tools already available on your machine.
 
-BetterEdit is an independent community project. It is not affiliated with, endorsed by, or sponsored by OpenAI.
+It is opinionated on purpose. Serif type. Strong continuity. Useful depth and slanted planes. No decorative UI clutter just because the frame felt empty
 
-## Install in Codex
+BetterEdit is an independent community project. It is not affiliated with or endorsed by OpenAI.
+
+## One finished example
+
+**No Pump. Still Rising.** is a 30-second explanation of how a tree pulls water upward without a mechanical pump. It uses the same rules bundled with BetterEdit: serif titles, narrated sound design, oblique planes, a perspective corridor, continuous focal travel and a final spatial payoff.
+
+<a href="docs/media/no-pump-still-rising-30s.mp4?raw=1"><img src="docs/media/no-pump-still-rising-preview.gif" alt="Animated excerpt from No Pump. Still Rising., showing a water droplet approaching a tree on an oblique plane" width="800"></a>
+
+Click the moving preview for the complete 30-second MP4. Sound on
+
+## Install
 
 Ask Codex:
 
 > Install the BetterEdit skill from `https://github.com/huynhminhhoang240302-sudo/betteredit/tree/main/skill/betteredit`
 
-Restart Codex after installation. Then start a task with:
+Restart Codex, then try something like:
 
-> Use $betteredit to create a 30-second highlight about how solar storms affect Earth. Render an MP4, use serif typography, and use meaningful oblique 2.5D compositions.
+> Use $betteredit to make a 30-second highlight about solar storms. Render an MP4, keep the type serif, and use meaningful oblique 2.5D scenes.
 
-That is the complete BetterEdit installation. The skill uses the normal local capabilities available to Codex. A host needs a video encoder such as FFmpeg only when it must create new MP4 files; browsing, planning, template selection, bindings, schemas, and all 240 included previews work without installing another BetterEdit component.
+That is the whole BetterEdit install. No second prompt pack, plugin, API key or cloud account.
 
-### Manual installation
+To render a new MP4, your machine still needs a video encoder such as FFmpeg. The guide, browser, template selection and all included previews work without installing another BetterEdit component.
 
-Copy `skill/betteredit` into `$CODEX_HOME/skills/betteredit`, then restart Codex. Do not copy the repository's private working history or your source media into the skill folder.
+Manual install: copy `skill/betteredit` into `$CODEX_HOME/skills/betteredit`, then restart Codex.
 
-## What is inside the skill
+## What you get
 
-- 240 curated short-edit templates across 32 narrative families.
-- 240 playable 960x540, 30 fps procedural MP4 demonstrations with guide audio.
-- Eight spatial modes: frontal, yaw-left, yaw-right, tilt plane, depth stack, corridor, oblique split, and orbital.
-- 204 non-frontal demonstrations and 36 deliberate frontal resets.
-- A self-contained offline browser for search, filtering, auditioning, and selection.
-- Machine-readable JSON, JSONL, CSV, and JSON Schema contracts.
-- Local asset bindings that keep user media separate from reusable choreography.
-- Template search, project scaffolding, binding creation, validation, and diagnostics.
-- A production workflow covering story, continuity, 2.5D/3D staging, sound, rendering, and QA.
+- 240 short-edit templates across 32 narrative families
+- 240 playable 960x540 MP4 previews with guide audio
+- an offline browser for searching and auditioning the library
+- frontal, yaw, tilt, corridor, depth-stack, oblique-split and orbital compositions
+- 204 spatial/non-frontal examples, plus 36 frontal resets where a flat view is actually clearer
+- schemas, selectors, asset bindings and validation tools
+- the full workflow: story, continuity, 2.5D/3D staging, sound, render and QA
 
-## Permanent creative locks
+The previews are generic choreography demonstrations. They are not stock footage and they are not supposed to become the final edit untouched. Pick a structure, bring your own cleared material, then let BetterEdit fit the two together.
 
-BetterEdit enforces these project-level rules:
+## The visual rules
 
-- Designed typography is serif-only.
-- No decorative top or bottom edge notes.
-- No repeated diagonal stripe, hatch, crosshatch, or crossed-line field resembling the rejected reference.
-- No slash-style pseudo-wayfinding counters.
-- No tiny accent kicker paired with a detached underline.
+These came from the original project and stay locked unless the maintainer changes them:
 
-Meaningful slanted content planes are encouraged. Yaw, perspective, corridors, depth stacks, oblique comparisons, architecture, charts, routes, and mechanisms are valid when they explain the subject. The ban applies to decorative repeated line fields, not useful spatial composition.
+- designed typography uses serif fonts
+- no decorative notes stuck along the top or bottom edge
+- no repeated diagonal stripe, hatch or crossed-line wallpaper
+- no slash-style fake wayfinding counters
+- no tiny label plus detached underline pretending to be a design system
 
-## Local maintainer quick start
+Slanted composition is allowed. Encouraged, really. A tilted card, perspective screen, architectural cutaway, route, chart or mechanism is useful when it explains something. The rule above is about decorative line fields, not about making every shot flat.
 
-Requirements for repository development: Node.js 20 or newer. FFmpeg and FFprobe are needed only for preview regeneration and deep media validation.
+## A few things BetterEdit is not
+
+It is not a cloud video generator. It does not upload your footage somewhere, and it does not need your browser profile, credentials or home directory.
+
+It is not a promise that one click makes a good film. You still choose the story and approve the material. BetterEdit gives Codex a much better editing vocabulary and a repeatable way to use it.
+
+And it is not finished. This is a public beta. If a clean install breaks, a template feels repetitive, or the instructions produce a weak edit, please open an issue and show the actual result.
+
+## Privacy and safety
+
+The template browser is static and makes no network requests. Keep source media in the video project, outside the installed skill. BetterEdit only writes project outputs where the task tells it to.
+
+No private source footage, credentials or workstation paths belong in this repository. The public-package audit checks for those before a release.
+
+More detail: [SECURITY.md](SECURITY.md), [PRIVACY.md](PRIVACY.md) and the [threat model](docs/THREAT_MODEL.md).
+
+## Working on the repository
+
+You need Node.js 20 or newer. FFmpeg and FFprobe are only needed when regenerating previews or running deep media checks.
 
 ```bash
 git clone https://github.com/huynhminhhoang240302-sudo/betteredit.git
@@ -59,7 +85,7 @@ node tools/validate-library.mjs
 node tools/audit-public-package.mjs
 ```
 
-Validate the installable skill directly:
+Check the installable skill itself:
 
 ```bash
 node skill/betteredit/scripts/doctor.mjs
@@ -67,54 +93,43 @@ node skill/betteredit/scripts/validate-library.mjs
 node skill/betteredit/scripts/find-templates.mjs --spatial corridor --effort enhanced
 ```
 
-The root `template-browser.html` is a maintainer mirror. Installed users use `skill/betteredit/assets/template-library/template-browser.html`.
+The useful folders:
 
-## Architecture
-
-BetterEdit separates reusable choreography from private material:
-
-1. **Skill instructions** decide how the agent briefs, plans, selects, binds, renders, and checks an edit.
-2. **Choreography** describes narrative job, timing, focal travel, spatial composition, audio events, continuity, and asset slots.
-3. **Style** defines serif roles, color, surface, lighting, motion, sound, and hard constraints.
-4. **Binding** connects exact user-approved media to declared slots and stays project-local.
-5. **Render** translates the plan into source files and a real MP4 using the host's local production tools.
-
-The skill never needs the original private analysis files. Checked-in videos are generic choreography demonstrations, not source footage for final edits.
-
-## Repository map
-
-| Path | Purpose |
-| --- | --- |
-| `skill/betteredit/` | The complete, installable BetterEdit product |
-| `skill/betteredit/SKILL.md` | Agent workflow and trigger contract |
-| `skill/betteredit/assets/template-library/` | Bundled registry, previews, schemas, styles, and browser |
-| `skill/betteredit/references/` | Full guide, field card, selection, and security references |
-| `skill/betteredit/scripts/` | Self-contained local utilities |
-| `MASTER_GUIDE.md` | Maintainer-facing mirror of the full system |
-| `library/`, `previews/`, `schema/` | Maintainer source mirrors used to build releases |
-| `APPLICATION_PLAN.md` | Evidence-driven Codex for Open Source execution plan |
-| `docs/` | Architecture, threat model, release, maintenance, and application materials |
-
-## Security and privacy
-
-BetterEdit does not require a cloud account or API key. Its template browser is static and does not make network requests. It does not need access to a home directory, browser profile, credential store, or unrelated repository. User media belongs in a separate project folder and is never bundled into the installed skill.
-
-Before publishing a fork or release:
-
-```bash
-node tools/audit-public-package.mjs
-node tools/validate-library.mjs
+```text
+skill/betteredit/                         the thing users install
+skill/betteredit/SKILL.md                 the agent workflow
+skill/betteredit/assets/template-library/ templates, previews, schemas and browser
+skill/betteredit/references/              guide, field card and safety notes
+skill/betteredit/scripts/                 local tools used by the skill
+library/ previews/ schema/                maintainer-side source mirrors
+docs/                                     architecture and maintenance records
 ```
 
-Read [SECURITY.md](SECURITY.md), [PRIVACY.md](PRIVACY.md), [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md), and [PUBLICATION_CHECKLIST.md](PUBLICATION_CHECKLIST.md).
+The root `template-browser.html` is the maintainer copy. Installed users open the version bundled under `skill/betteredit/assets/template-library/`.
 
-## Project status
+## How an edit is put together
 
-[`v0.1.2`](https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.2) is the current public beta. The repository should not be submitted to Codex for Open Source merely because it exists. The next milestone is documented external use, responsive issue triage, and reviewed human contributions. See [APPLICATION_PLAN.md](APPLICATION_PLAN.md).
+BetterEdit keeps reusable motion separate from private media:
+
+1. The skill reads the brief and builds an edit plan
+2. A choreography template supplies timing, focal movement, spatial layout, sound events and asset slots
+3. A style definition supplies type, color, surfaces, light and motion behavior
+4. A project-local binding connects approved files to those slots
+5. The renderer turns the plan into source files and a real MP4
+
+That separation is important. The public library can be reused without absorbing anyone's footage into the skill.
+
+## Status
+
+[`v0.1.2`](https://github.com/huynhminhhoang240302-sudo/betteredit/releases/tag/v0.1.2) is the current beta.
+
+Right now the useful work is less glamorous: clean-install reports, real examples, bug reports, review, and seeing whether the system holds up outside my machine. The [roadmap](ROADMAP.md) and [application plan](APPLICATION_PLAN.md) track that work openly.
 
 ## Contributing
 
-Start with [CONTRIBUTING.md](CONTRIBUTING.md), [ROADMAP.md](ROADMAP.md), and [GOVERNANCE.md](GOVERNANCE.md). New templates must be distinct, deterministic, schema-valid, free of the banned motifs, and accompanied by a playable preview.
+Start with [CONTRIBUTING.md](CONTRIBUTING.md). A new template needs to be visually distinct, deterministic, schema-valid and accompanied by a playable preview. Please do not submit private footage or a slightly renamed copy of an existing motion.
+
+Questions and rough experiments are welcome too. An issue with a screen recording is often more useful than a polished paragraph
 
 ## License
 
